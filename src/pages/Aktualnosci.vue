@@ -19,24 +19,6 @@
   </Layout>
 </template>
 
-<page-query>
-query {
-  posts: allPosts(filter: { published: { eq: true }}, sortBy: "date") {
-    edges {
-      node {
-        id
-        title
-        content
-        demo
-        date(format: "DD.MM.YYYY")
-        path
-        image
-      }
-    }
-  }
-}
-</page-query>
-
 <script>
 import Item from "@/components/Item.vue";
 import news from "@/data/news";

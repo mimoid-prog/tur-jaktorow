@@ -2,35 +2,69 @@
   <Layout>
     <div id="news" class="news">
       <h2 class="secondaryTitle viewTitle">Aktualności</h2>
-      <div class="posts"></div>
+      <div class="posts">
+        <Item v-for="(post, index) in news" :key="index">
+          <template v-slot:title
+            >{{ post.emoji }} {{ post.date }}</template
+          >
+          <template v-slot:content>
+            <div v-html="post.content" class="post-content"></div>
+            <a :href="post.link" target="_blank"
+              >➡️ Zobacz post i zdjęcia na FB</a
+            >
+          </template>
+        </Item>
+      </div>
     </div>
   </Layout>
 </template>
 
+<page-query>
+query {
+  posts: allPosts(filter: { published: { eq: true }}, sortBy: "date") {
+    edges {
+      node {
+        id
+        title
+        content
+        demo
+        date(format: "DD.MM.YYYY")
+        path
+        image
+      }
+    }
+  }
+}
+</page-query>
+
 <script>
-import Item from '@/components/Item.vue';
+import Item from "@/components/Item.vue";
+import news from "@/data/news";
 
 export default {
   metaInfo: {
-    title: 'Aktualności',
+    title: "Aktualności",
   },
-  name: 'Aktualności',
+  name: "Aktualności",
   components: {
     Item,
   },
-  data: function () {
+  data: function() {
     return {
-      posts: [],
       page: 1,
+      news,
     };
   },
-  mounted() {},
 };
 </script>
 
 <style lang="scss" scoped>
 .news {
   width: 100%;
+}
+
+.post-content /deep/ p {
+  margin-bottom: 0.2em !important;
 }
 
 .posts {
@@ -95,5 +129,11 @@ export default {
   &:hover {
     background: #5ca9db;
   }
+}
+
+a {
+  margin-top: 8px;
+  color: black;
+  display: inline-block;
 }
 </style>

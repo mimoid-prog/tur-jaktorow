@@ -11,9 +11,9 @@
           </transition>
         </div>
         <transition name="showPageUp">
-          <a href="#layout" class="pageUp" v-if="showPageUp" @click="scrollToTop">
+          <button class="pageUp" v-if="showPageUp" @click="scrollToTop">
             <PageUp />
-          </a>
+          </button>
         </transition>
       </div>
     </div>
@@ -21,34 +21,34 @@
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue';
-import PageUp from '~/assets/svgs/PageUp.svg';
+import Navbar from "~/components/Navbar.vue";
+import PageUp from "~/assets/svgs/PageUp.svg";
 
 export default {
-  name: 'Default',
+  name: "Default",
   components: {
     Navbar,
     PageUp,
   },
-  data: function () {
+  data: function() {
     return {
       showPageUp: false,
     };
   },
-  mounted: function () {
-    window.addEventListener('scroll', this.handleScroll);
+  mounted: function() {
+    window.addEventListener("scroll", this.handleScroll);
   },
-  destroyed: function () {
-    window.removeEventListener('scroll', this.handleScroll);
+  destroyed: function() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
-    handleScroll: function () {
+    handleScroll: function() {
       if (window.innerHeight / 2 < document.documentElement.scrollTop)
         this.showPageUp = true;
       else this.showPageUp = false;
     },
-    scrollToTop: function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop: function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     },
   },
 };
@@ -56,33 +56,33 @@ export default {
 
 <style lang="scss">
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/Jost-Regular.woff') format('woff2'),
-    url('../assets/fonts/Jost-Regular.woff') format('woff'),
-    url('../assets/fonts/Jost-Regular.ttf') format('ttf'),
-    url('../assets/fonts/Jost-Regular.eot') format('eot');
+  src: url("../assets/fonts/Jost-Regular.woff") format("woff2"),
+    url("../assets/fonts/Jost-Regular.woff") format("woff"),
+    url("../assets/fonts/Jost-Regular.ttf") format("ttf"),
+    url("../assets/fonts/Jost-Regular.eot") format("eot");
 }
 
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 500;
-  src: url('../assets/fonts/Jost-Medium.woff2') format('woff2'),
-    url('../assets/fonts/Jost-Medium.woff') format('woff'),
-    url('../assets/fonts/Jost-Medium.ttf') format('ttf'),
-    url('../assets/fonts/Jost-Medium.eot') format('eot');
+  src: url("../assets/fonts/Jost-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Jost-Medium.woff") format("woff"),
+    url("../assets/fonts/Jost-Medium.ttf") format("ttf"),
+    url("../assets/fonts/Jost-Medium.eot") format("eot");
 }
 
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
-  src: url('../assets/fonts/Jost-Bold.woff2') format('woff2'),
-    url('../assets/fonts/Jost-Bold.woff') format('woff'),
-    url('../assets/fonts/Jost-Bold.ttf') format('ttf'),
-    url('../assets/fonts/Jost-Bold.eot') format('eot');
+  src: url("../assets/fonts/Jost-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Jost-Bold.woff") format("woff"),
+    url("../assets/fonts/Jost-Bold.ttf") format("ttf"),
+    url("../assets/fonts/Jost-Bold.eot") format("eot");
 }
 </style>
 
@@ -118,6 +118,14 @@ export default {
   height: 50px;
   bottom: 30px;
   right: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover .bgArrow {
+    fill: #212121;
+  }
 
   .bgArrow {
     fill: #000;
@@ -157,6 +165,10 @@ export default {
 
   .pageUp {
     right: auto;
+
+    &:hover .bgArrow {
+      fill: #f5f5f5;
+    }
 
     .bgArrow {
       fill: #fff;

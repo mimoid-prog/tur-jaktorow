@@ -5,13 +5,16 @@
       <div class="content">
         <div class="box">
           <div class="header">
-            <img src="@/assets/images/logos/tur.jpg" alt="Tur Jaktorów logo" />
+            <g-image
+              src="@/assets/images/logos/tur.jpg"
+              alt="Tur Jaktorów logo"
+            />
             <h3>Ludowy Klub Sportowy</h3>
             <h3>Tur Jaktorów</h3>
           </div>
           <div class="infoBox">
             <div class="info">
-              <h3>Dane:</h3>
+              <h3>📝 Dane:</h3>
               <p><span>Rok założenia: </span>2001</p>
               <p>
                 <span>Kontakt z klubem: </span
@@ -28,19 +31,22 @@
                   >www.facebook.com/lksturjaktorow</a
                 >
               </p>
-              <h3>Stadion:</h3>
+              <h3>🏟️ Stadion:</h3>
               <p><span>Liczba miejsc: </span>300 miejsc siedzących</p>
               <p><span>Boisko: </span>105m x 6m</p>
               <p><span>Murawa: </span>Naturalna</p>
-              <h3>Konto bankowe:</h3>
+              <h3>🏦 Konto bankowe:</h3>
               <p>LKS „TUR” Jaktorów</p>
               <p>ul. Warszawska 88</p>
               <p><span>Nr konta: </span>07 1240 3350 1111 0000 3550 3002</p>
             </div>
           </div>
         </div>
-        <div class="photo"></div>
-        <p class="source">Źródło: www.facebook.com/lksturjaktorow</p>
+        <g-image
+          src="../assets/images/photos/kadra.jpg"
+          class="photo"
+          alt="Kibice na stadionie Tura"
+        />
       </div>
     </div>
   </Layout>
@@ -73,6 +79,15 @@ export default {
   margin: 30px auto 0;
   display: inline-block;
 
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   p {
     margin-bottom: 2px;
   }
@@ -82,19 +97,16 @@ export default {
     color: #2e2e2e;
   }
 
-  h3 {
-    margin-top: 10px;
+  a {
+    color: black;
   }
 }
 
 .photo {
   width: 100%;
-  height: 200px;
-  background: url("../assets/images/photos/kadra.jpg");
-  background-position: 50%;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  height: 300px;
   margin-top: 20px;
+  object-fit: cover;
 }
 
 .source {
@@ -115,7 +127,7 @@ export default {
 
 @media (min-width: 1360px) {
   .photo {
-    height: 300px;
+    height: 400px;
     margin-top: 30px;
   }
 

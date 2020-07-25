@@ -57,15 +57,15 @@ const getMatches = (selected) => {
   }`;
 
   if (currentWeek === 0) {
-    titleOne = `Pierwszy mecz sezonu - ${dateOne}`;
-    titleTwo = `Drugi mecz sezonu - ${dateTwo}`;
+    titleOne = `Pierwszy mecz - ${dateOne} ${timeOne}`;
+    titleTwo = `Drugi mecz - ${dateTwo} ${timeTwo}`;
     scoreOne = "wkrótce";
     scoreTwo = "wkrótce";
     isTextOne = true;
     isTextTwo = true;
   } else if (currentWeek < schedule.length - 1) {
-    titleOne = `Ostatni mecz - ${dateOne}`;
-    titleTwo = `Następny mecz - ${dateTwo}`;
+    titleOne = `Ostatni mecz - ${dateOne} ${timeOne}`;
+    titleTwo = `Następny mecz - ${dateTwo} ${timeTwo}`;
     scoreOne = `${info[turMatchOne.teamOne].scoredGoals[weekOne]} :
     ${info[turMatchOne.teamTwo].scoredGoals[weekOne]}`;
     scoreTwo = `${info[turMatchTwo.teamOne].scoredGoals[weekTwo]} :
@@ -73,8 +73,8 @@ const getMatches = (selected) => {
     isTextOne = false;
     isTextTwo = false;
   } else {
-    titleOne = `Przedostatni mecz sezonu - ${dateOne}`;
-    titleTwo = `Ostatni mecz sezonu - ${dateTwo}`;
+    titleOne = `Przedostatni mecz sezonu - ${dateOne} ${timeOne}`;
+    titleTwo = `Ostatni mecz sezonu - ${dateTwo} ${timeTwo}`;
     scoreOne = `${info[turMatchOne.teamOne].scoredGoals[weekOne]} :
     ${info[turMatchOne.teamTwo].scoredGoals[weekOne]}`;
     scoreTwo = `${info[turMatchTwo.teamOne].scoredGoals[weekTwo]} :

@@ -1,6 +1,8 @@
 <template>
   <Item class="scoreboard">
-    <template v-slot:title>Tabela wyników</template>
+    <template v-slot:title
+      >Tabela wyników</template
+    >
     <template v-slot:content>
       <div class="scoreboard">
         <table>
@@ -14,7 +16,10 @@
           <tr v-for="(item, index) in scoreboard" :key="index">
             <td>{{ index + 1 }}.</td>
             <td class="club">
-              <img :src="require(`@/assets/images/logos/${item.logo}`)" :alt="item.club + ' logo'" />
+              <g-image
+                :src="require(`@/assets/images/logos/${item.logo}`)"
+                :alt="item.club + ' logo'"
+              />
               <span>{{ item.club }}</span>
             </td>
             <td>{{ item.stats }}</td>
@@ -28,17 +33,17 @@
 </template>
 
 <script>
-import Item from '@/components/Item.vue';
-import infoAll from '@/data/info';
+import Item from "@/components/Item.vue";
+import infoAll from "@/data/info";
 
 export default {
-  name: 'Scoreboard',
-  props: ['selected'],
+  name: "Scoreboard",
+  props: ["selected"],
   components: {
     Item,
   },
   computed: {
-    scoreboard: function () {
+    scoreboard: function() {
       const info = infoAll[this.selected];
       let scoreboard = info.map((team) => ({
         club: team.club,

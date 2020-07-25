@@ -1,16 +1,6 @@
 module.exports = {
   siteName: "Tur Jaktorów",
-  templates: {
-    Posts: "/aktualnosci/:title",
-  },
   plugins: [
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        typeName: "Posts",
-        path: "src/data/posts/*.md",
-      },
-    },
     {
       use: "@gridsome/plugin-google-analytics",
       options: {

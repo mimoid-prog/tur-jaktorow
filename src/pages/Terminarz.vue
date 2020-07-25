@@ -15,8 +15,8 @@
           <template v-slot:content>
             <ul>
               <li v-for="(match, index) in week.matches" :key="index">
-                <img
-                  v-if="match.teamOne !== null"
+                <g-image
+                  :class="{ pauseLogo: match.teamTwo === null }"
                   :src="
                     require(`@/assets/images/logos/${info[match.teamOne].logo}`)
                   "
@@ -37,9 +37,9 @@
                 </p>
                 <p v-else class="week-pause">
                   <span>{{ info[match.teamOne].club }}</span>
-                  <span>pauzuje w kolejce</span>
+                  <span>{{ " " }}pauzuje w kolejce</span>
                 </p>
-                <img
+                <g-image
                   v-if="match.teamTwo !== null"
                   :src="
                     require(`@/assets/images/logos/${info[match.teamTwo].logo}`)
@@ -91,10 +91,6 @@ export default {
   margin-bottom: 10px;
 }
 
-.week-pause {
-  text-align: left;
-}
-
 ul {
   list-style: none;
   font-size: 16px;
@@ -126,6 +122,10 @@ ul {
       margin-left: 10px;
     }
 
+    .pauseLogo {
+      display: none;
+    }
+
     p {
       display: flex;
       flex-direction: column;
@@ -153,6 +153,10 @@ ul {
 
       img {
         width: 32px;
+      }
+
+      .pauseLogo {
+        display: block;
       }
 
       p {

@@ -23,6 +23,9 @@
               <g-link to="/" exact>Strona główna</g-link>
             </li>
             <li>
+              <g-link to="/aktualnosci/">Aktualności</g-link>
+            </li>
+            <li>
               <g-link to="/o-klubie/">O klubie</g-link>
             </li>
             <li>
@@ -115,7 +118,7 @@ h1 {
   padding: 30px;
   transition: transform 0.5s ease-in-out;
   transform: translateX(100%);
-  z-index: 99;
+  z-index: 9999;
 }
 
 .navBoxInner.active {

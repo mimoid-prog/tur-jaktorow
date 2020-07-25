@@ -22,8 +22,12 @@
           ulepszyć/poprawić?
         </p>
         <p>Chcesz się o coś zapytać lub skontaktować w ramach współpracy?</p>
-        <p class="contact-me">Napisz do mnie:</p>
+        <p class="info-heading">📧 Wyślij mail:</p>
         <p class="email">mateusz.szkop99@gmail.com</p>
+        <p class="info-heading">🖼️ Strona internetowa:</p>
+        <a href="https://mateuszszkop.pl" target="_blank" class="my-page"
+          >mateuszszkop.pl</a
+        >
         <p class="copyright">© 2020 Wszelkie prawa zastrzeżone</p>
       </div>
     </div>
@@ -53,8 +57,9 @@ p {
   margin-top: 3px;
 }
 
-.contact-me {
+.info-heading {
   font-weight: 700;
+  margin-top: 6px;
 }
 
 .email {
@@ -70,6 +75,14 @@ p {
 
 .changes-text {
   margin-top: 18px;
+}
+
+a {
+  color: black;
+}
+
+.my-page {
+  margin-left: 10px;
 }
 
 @media (min-width: 1024px) {

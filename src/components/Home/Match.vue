@@ -4,9 +4,17 @@
     <template v-slot:content>
       <div class="match">
         <div>
-          <img :src="require(`@/assets/images/logos/${match.logos.teamOne}`)" :alt="'lol'" />
-          <div :class="['score', { soon: match.isText }]">{{ match.score }}</div>
-          <img :src="require(`@/assets/images/logos/${match.logos.teamTwo}`)" :alt="'lol'" />
+          <g-image
+            :src="require(`@/assets/images/logos/${match.logos.teamOne}`)"
+            :alt="'lol'"
+          />
+          <div :class="['score', { soon: match.isText }]">
+            {{ match.score }}
+          </div>
+          <g-image
+            :src="require(`@/assets/images/logos/${match.logos.teamTwo}`)"
+            :alt="'lol'"
+          />
         </div>
         <p class="teamNames">{{ match.clubs }}</p>
       </div>
@@ -15,17 +23,17 @@
 </template>
 
 <script>
-import Item from '@/components/Item.vue';
-import getMatches from '@/data/matches';
+import Item from "@/components/Item.vue";
+import getMatches from "@/data/matches";
 
 export default {
-  name: 'Match',
-  props: ['firstBox', 'selected'],
+  name: "Match",
+  props: ["firstBox", "selected"],
   components: {
     Item,
   },
   computed: {
-    match: function () {
+    match: function() {
       const matches = getMatches(this.selected);
       if (this.firstBox) return matches.matchOne;
       else return matches.matchTwo;

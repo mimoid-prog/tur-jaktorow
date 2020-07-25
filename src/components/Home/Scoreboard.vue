@@ -39,12 +39,19 @@ export default {
   },
   computed: {
     scoreboard: function () {
-      console.log(this.selected);
       const info = infoAll[this.selected];
       let scoreboard = info.map((team) => ({
         club: team.club,
         logo: team.logo,
         stats: `${team.stats[0]}/${team.stats[1]}/${team.stats[2]}`,
+        scoredGoals:
+          team.scoredGoals.length === 0
+            ? 0
+            : team.scoredGoals.reduce((a, b) => a + b),
+        lostGoals:
+          team.lostGoals.length === 0
+            ? 0
+            : team.lostGoals.reduce((a, b) => a + b),
         points: team.stats[0] * 3 + team.stats[1],
       }));
       scoreboard.sort((a, b) => b.points - a.points);

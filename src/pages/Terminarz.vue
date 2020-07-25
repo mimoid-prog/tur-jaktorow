@@ -4,36 +4,46 @@
       <h2 class="secondaryTitle viewTitle">Terminarz</h2>
       <SelectBox @selected="onSelect" />
       <div class="content">
-        <Item v-for="(week, weekIndex) in schedule" :key="weekIndex" class="week-box">
-          <template v-slot:title>Kolejka {{ week.week + 1 }} - {{ week.date }}</template>
+        <Item
+          v-for="(week, weekIndex) in schedule"
+          :key="weekIndex"
+          class="week-box"
+        >
+          <template v-slot:title
+            >Kolejka {{ week.week + 1 }} - {{ week.date }}</template
+          >
           <template v-slot:content>
             <ul>
               <li v-for="(match, index) in week.matches" :key="index">
                 <img
                   v-if="match.teamOne !== null"
                   :src="
-                  require(`@/assets/images/logos/${info[match.teamOne].logo}`)
-                "
+                    require(`@/assets/images/logos/${info[match.teamOne].logo}`)
+                  "
                   :alt="info[match.teamOne].club + ' logotyp'"
                 />
                 <p
+                  v-if="match.teamTwo !== null"
                   :class="{
-                  tur: match.teamOne === 0 || match.teamTwo === 0,
-                }"
+                    tur: match.teamOne === 0 || match.teamTwo === 0,
+                  }"
                 >
                   <span>{{ info[match.teamOne].club }}</span>
-                  <span
-                    v-if="match.teamOne !== null && match.teamTwo !== null"
-                    class="score"
-                  >{{ info[match.teamOne].scoredGoals[week.week] }} - {{ info[match.teamTwo].scoredGoals[week.week] }}</span>
-                  <span v-if="match.teamTwo !== null">{{ info[match.teamTwo].club }}</span>
-                  <span v-else>{{" "}}pauzuje w kolejce</span>
+                  <span class="score"
+                    >{{ info[match.teamOne].scoredGoals[week.week] }} -
+                    {{ info[match.teamTwo].scoredGoals[week.week] }}</span
+                  >
+                  <span>{{ info[match.teamTwo].club }}</span>
+                </p>
+                <p v-else class="week-pause">
+                  <span>{{ info[match.teamOne].club }}</span>
+                  <span>pauzuje w kolejce</span>
                 </p>
                 <img
                   v-if="match.teamTwo !== null"
                   :src="
-                  require(`@/assets/images/logos/${info[match.teamTwo].logo}`)
-                "
+                    require(`@/assets/images/logos/${info[match.teamTwo].logo}`)
+                  "
                   :alt="info[match.teamTwo].club + ' logotyp'"
                 />
               </li>
@@ -46,29 +56,29 @@
 </template>
 
 <script>
-import SelectBox from '@/components/SelectBox.vue';
-import Item from '@/components/Item.vue';
+import SelectBox from "@/components/SelectBox.vue";
+import Item from "@/components/Item.vue";
 
-import info from '@/data/info';
-import schedule from '@/data/schedule';
+import info from "@/data/info";
+import schedule from "@/data/schedule";
 
 export default {
   metaInfo: {
-    title: 'Terminarz',
+    title: "Terminarz",
   },
-  name: 'Schedule',
+  name: "Schedule",
   components: {
     Item,
     SelectBox,
   },
-  data: function () {
+  data: function() {
     return {
       info: info.senior,
       schedule: schedule.senior,
     };
   },
   methods: {
-    onSelect: function (val) {
+    onSelect: function(val) {
       this.info = info[val];
       this.schedule = schedule[val];
     },
@@ -79,6 +89,10 @@ export default {
 <style lang="scss" scoped>
 .week-box {
   margin-bottom: 10px;
+}
+
+.week-pause {
+  text-align: left;
 }
 
 ul {

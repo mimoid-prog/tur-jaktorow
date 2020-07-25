@@ -1,0 +1,8 @@
+-> scroll to top
+-> poprawić "pauzuje w kolejce"
+-> poprawić title w match na mobile
+-> dodać datę i godzinę w schedule
+-> dodać godzinę w match
+-> kadra
+-> aktualności
+-> galeria

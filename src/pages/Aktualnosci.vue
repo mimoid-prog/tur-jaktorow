@@ -20,9 +20,11 @@ export default {
   },
   data: function () {
     return {
+      posts: [],
       page: 1,
     };
   },
+  mounted() {},
 };
 </script>
 

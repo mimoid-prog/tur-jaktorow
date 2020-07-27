@@ -4,18 +4,20 @@
       <h2 class="secondaryTitle viewTitle">Informacje</h2>
       <div class="content">
         <p>
-          Strona <b>tur-jaktorow.pl</b> to oficjalna strona Jaktorowskiego klubu
+          Strona
+          <b>tur-jaktorow.pl</b> to oficjalna strona Jaktorowskiego klubu
           piłkarskiego Tur Jaktorów.
         </p>
         <p>
-          <span>Kontakt z klubem: </span
-          ><a href="tel:468565132">+46 586 51 32</a>
+          <span>Kontakt z klubem:</span>
+          <a href="tel:468565132">+46 586 51 32</a>
         </p>
         <p>
-          <span>Fanpage: </span
-          ><a href="https://www.facebook.com/lksturjaktorow" target="_blank"
-            >www.facebook.com/lksturjaktorow</a
-          >
+          <span>Fanpage:</span>
+          <a
+            href="https://www.facebook.com/lksturjaktorow"
+            target="_blank"
+          >www.facebook.com/lksturjaktorow</a>
         </p>
         <p class="changes-text">
           Masz jakieś uwagi/spostrzeżenia dotyczące strony lub pomysł co można
@@ -25,9 +27,7 @@
         <p class="info-heading">📧 Wyślij mail:</p>
         <p class="email">mateusz.szkop99@gmail.com</p>
         <p class="info-heading">🖼️ Strona internetowa:</p>
-        <a href="https://mateuszszkop.pl" target="_blank" class="my-page"
-          >mateuszszkop.pl</a
-        >
+        <a href="https://mateuszszkop.pl" target="_blank" class="my-page">mateuszszkop.pl</a>
         <p class="copyright">© 2020 Wszelkie prawa zastrzeżone</p>
       </div>
     </div>
@@ -37,9 +37,11 @@
 <script>
 export default {
   metaInfo: {
-    title: "Informacje",
+    title: 'Informacje',
+    description:
+      'Informacje na temat strony tur-jaktorow.pl. Zauważyłeś błąd lub masz pomysł na rozwój strony? Skontaktuj się z nami.',
   },
-  name: "Informacje",
+  name: 'Informacje',
 };
 </script>
 

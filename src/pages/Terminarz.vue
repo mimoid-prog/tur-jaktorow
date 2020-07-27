@@ -4,14 +4,8 @@
       <h2 class="secondaryTitle viewTitle">Terminarz</h2>
       <SelectBox @selected="onSelect" />
       <div class="content">
-        <Item
-          v-for="(week, weekIndex) in schedule"
-          :key="weekIndex"
-          class="week-box"
-        >
-          <template v-slot:title
-            >Kolejka {{ week.week + 1 }} - {{ week.date }}</template
-          >
+        <Item v-for="(week, weekIndex) in schedule" :key="weekIndex" class="week-box">
+          <template v-slot:title>Kolejka {{ week.week + 1 }} - {{ week.date }}</template>
           <template v-slot:content>
             <ul>
               <li v-for="(match, index) in week.matches" :key="index">
@@ -29,10 +23,10 @@
                   }"
                 >
                   <span>{{ info[match.teamOne].club }}</span>
-                  <span class="score"
-                    >{{ info[match.teamOne].scoredGoals[week.week] }} -
-                    {{ info[match.teamTwo].scoredGoals[week.week] }}</span
-                  >
+                  <span class="score">
+                    {{ info[match.teamOne].scoredGoals[week.week] }} -
+                    {{ info[match.teamTwo].scoredGoals[week.week] }}
+                  </span>
                   <span>{{ info[match.teamTwo].club }}</span>
                 </p>
                 <p v-else class="week-pause">
@@ -56,29 +50,31 @@
 </template>
 
 <script>
-import SelectBox from "@/components/SelectBox.vue";
-import Item from "@/components/Item.vue";
+import SelectBox from '@/components/SelectBox.vue';
+import Item from '@/components/Item.vue';
 
-import info from "@/data/info";
-import schedule from "@/data/schedule";
+import info from '@/data/info';
+import schedule from '@/data/schedule';
 
 export default {
   metaInfo: {
-    title: "Terminarz",
+    title: 'Terminarz',
+    description:
+      'Harmonogram, terminarz oraz wyniki rozgrywek dla wszystkich lig w których występuje Tur Jaktorów. Między innymi klasa A oraz ligi juniorskie.',
   },
-  name: "Schedule",
+  name: 'Schedule',
   components: {
     Item,
     SelectBox,
   },
-  data: function() {
+  data: function () {
     return {
       info: info.senior,
       schedule: schedule.senior,
     };
   },
   methods: {
-    onSelect: function(val) {
+    onSelect: function (val) {
       this.info = info[val];
       this.schedule = schedule[val];
     },

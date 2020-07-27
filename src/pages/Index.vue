@@ -20,6 +20,8 @@ import Scoreboard from '@/components/Home/Scoreboard.vue';
 export default {
   metaInfo: {
     title: 'Strona główna',
+    description:
+      'Oficjalna strona klubu piłkarskiego LKS Tur Jaktorów. Zobacz ostatnie mecze, wyniki i tabelę rozgrywek.',
   },
   name: 'Home',
   components: {

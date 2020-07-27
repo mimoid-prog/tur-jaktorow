@@ -26,10 +26,12 @@
               </p>
               <p>
                 <span>Kontakt z klubem:</span>
+                {{" "}}
                 <a href="tel:468565132">+46 586 51 32</a>
               </p>
               <p>
                 <span>Fanpage:</span>
+                {{" "}}
                 <a
                   href="https://www.facebook.com/lksturjaktorow"
                   target="_blank"

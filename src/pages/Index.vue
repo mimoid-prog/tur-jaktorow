@@ -21,7 +21,7 @@ export default {
   metaInfo: {
     title: 'Strona główna',
     description:
-      'Oficjalna strona klubu piłkarskiego LKS Tur Jaktorów. Zobacz ostatnie mecze, wyniki i tabelę rozgrywek.',
+      'Oficjalna strona klubu piłkarskiego LKS Tur Jaktorów. Zobacz ostatnie mecze, wyniki i tabelę rozgrywek. Klasa A seniorów oraz wszystkie roczniki juniorskie w jednym miejscu.',
   },
   name: 'Home',
   components: {

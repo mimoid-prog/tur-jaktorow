@@ -4,14 +4,10 @@
       <h2 class="secondaryTitle viewTitle">Aktualności</h2>
       <div class="posts">
         <Item v-for="(post, index) in news" :key="index">
-          <template v-slot:title
-            >{{ post.emoji }} {{ post.date }}</template
-          >
+          <template v-slot:title>{{ post.emoji }} {{ post.date }}</template>
           <template v-slot:content>
             <div v-html="post.content" class="post-content"></div>
-            <a :href="post.link" target="_blank"
-              >➡️ Zobacz post i zdjęcia na FB</a
-            >
+            <a :href="post.link" target="_blank">➡️ Zobacz post i zdjęcia na FB</a>
           </template>
         </Item>
       </div>
@@ -20,18 +16,18 @@
 </template>
 
 <script>
-import Item from "@/components/Item.vue";
-import news from "@/data/news";
+import Item from '@/components/Item.vue';
+import news from '@/data/news';
 
 export default {
   metaInfo: {
-    title: "Aktualności",
+    title: 'Aktualności',
   },
-  name: "Aktualności",
+  name: 'Aktualności',
   components: {
     Item,
   },
-  data: function() {
+  data: function () {
     return {
       page: 1,
       news,

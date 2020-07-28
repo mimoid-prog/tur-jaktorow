@@ -1,8 +1,6 @@
 module.exports = {
   siteName: "Tur Jaktorów",
   siteUrl: "https://tur-jaktorow.pl",
-  siteDescription:
-    "Oficjalna strona klubu piłkarskiego LKS Tur Jaktorów. Zobacz ostatnie mecze, wyniki i tabelę rozgrywek.",
   plugins: [
     {
       use: "@gridsome/plugin-google-analytics",

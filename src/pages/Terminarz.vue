@@ -59,8 +59,12 @@ import schedule from '@/data/schedule';
 export default {
   metaInfo: {
     title: 'Terminarz',
-    description:
-      'Harmonogram, terminarz oraz wyniki rozgrywek dla wszystkich lig w których występuje Tur Jaktorów. Między innymi klasa A oraz ligi juniorskie.',
+    meta: [
+      {
+        description:
+          'Harmonogram, terminarz oraz wyniki rozgrywek dla wszystkich lig w których występuje Tur Jaktorów. Między innymi klasa A oraz ligi juniorskie.',
+      },
+    ],
   },
   name: 'Schedule',
   components: {

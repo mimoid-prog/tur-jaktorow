@@ -70,8 +70,12 @@
 export default {
   metaInfo: {
     title: 'O klubie',
-    description:
-      'Informacje o klubie piłkarskim Tur Jaktorów, o miejscowym stadionie. Skontaktuj się z klubem przez telefon lub facebooka.',
+    meta: [
+      {
+        description:
+          'Dane o klubie piłkarskim Tur Jaktorów, o miejscowym stadionie. Skontaktuj się z klubem przez telefon lub facebooka.',
+      },
+    ],
   },
   name: 'O klubie',
 };

@@ -40,8 +40,12 @@
 export default {
   metaInfo: {
     title: 'Informacje',
-    description:
-      'Informacje na temat strony tur-jaktorow.pl. Zauważyłeś błąd lub masz pomysł na rozwój strony? Skontaktuj się z nami.',
+    meta: [
+      {
+        description:
+          'Informacje na temat strony tur-jaktorow.pl. Zauważyłeś błąd lub masz pomysł na rozwój strony? Skontaktuj się z nami.',
+      },
+    ],
   },
   name: 'Informacje',
 };

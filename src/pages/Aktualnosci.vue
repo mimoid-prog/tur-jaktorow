@@ -22,8 +22,12 @@ import news from '@/data/news';
 export default {
   metaInfo: {
     title: 'Aktualności',
-    description:
-      'Najnowsze aktualności na temat Tura Jaktorów, ostatnie wyniki meczów oraz informacje o wyjazdach, obozach i treningach.',
+    meta: [
+      {
+        description:
+          'Najnowsze aktualności na temat Tura Jaktorów, ostatnie wyniki meczów oraz informacje o wyjazdach, obozach i treningach.',
+      },
+    ],
   },
   name: 'Aktualności',
   components: {

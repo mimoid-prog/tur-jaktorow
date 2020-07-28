@@ -61,7 +61,8 @@ export default {
     title: 'Terminarz',
     meta: [
       {
-        description:
+        name: 'description',
+        content:
           'Harmonogram, terminarz oraz wyniki rozgrywek dla wszystkich lig w których występuje Tur Jaktorów. Między innymi klasa A oraz ligi juniorskie.',
       },
     ],

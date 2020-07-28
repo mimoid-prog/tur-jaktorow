@@ -42,7 +42,8 @@ export default {
     title: 'Informacje',
     meta: [
       {
-        description:
+        name: 'description',
+        content:
           'Informacje na temat strony tur-jaktorow.pl. Zauważyłeś błąd lub masz pomysł na rozwój strony? Skontaktuj się z nami.',
       },
     ],

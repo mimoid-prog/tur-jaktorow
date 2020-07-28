@@ -24,7 +24,8 @@ export default {
     title: 'Aktualności',
     meta: [
       {
-        description:
+        name: 'description',
+        content:
           'Najnowsze aktualności na temat Tura Jaktorów, ostatnie wyniki meczów oraz informacje o wyjazdach, obozach i treningach.',
       },
     ],

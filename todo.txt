@@ -1,4 +1,5 @@
 -> dodać datę i godzinę w schedule
 -> dodać godzinę w match
+strony:
 -> kadra
 -> galeria

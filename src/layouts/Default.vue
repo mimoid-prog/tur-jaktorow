@@ -21,34 +21,34 @@
 </template>
 
 <script>
-import Navbar from '~/components/Navbar.vue';
-import PageUp from '~/assets/svgs/PageUp.svg';
+import Navbar from "~/components/Navbar.vue";
+import PageUp from "~/assets/svgs/PageUp.svg";
 
 export default {
-  name: 'Default',
+  name: "Default",
   components: {
     Navbar,
     PageUp,
   },
-  data: function () {
+  data: function() {
     return {
       showPageUp: false,
     };
   },
-  mounted: function () {
-    window.addEventListener('scroll', this.handleScroll);
+  mounted: function() {
+    window.addEventListener("scroll", this.handleScroll);
   },
-  destroyed: function () {
-    window.removeEventListener('scroll', this.handleScroll);
+  destroyed: function() {
+    window.removeEventListener("scroll", this.handleScroll);
   },
   methods: {
-    handleScroll: function () {
+    handleScroll: function() {
       if (window.innerHeight / 2 < document.documentElement.scrollTop)
         this.showPageUp = true;
       else this.showPageUp = false;
     },
-    scrollToTop: function () {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    scrollToTop: function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     },
   },
 };
@@ -56,35 +56,35 @@ export default {
 
 <style lang="scss">
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 400;
-  src: url('../assets/fonts/Jost-Regular.woff') format('woff2'),
-    url('../assets/fonts/Jost-Regular.woff') format('woff'),
-    url('../assets/fonts/Jost-Regular.ttf') format('ttf'),
-    url('../assets/fonts/Jost-Regular.eot') format('eot');
+  src: url("../assets/fonts/Jost-Regular.woff") format("woff2"),
+    url("../assets/fonts/Jost-Regular.woff") format("woff"),
+    url("../assets/fonts/Jost-Regular.ttf") format("ttf"),
+    url("../assets/fonts/Jost-Regular.eot") format("eot");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 500;
-  src: url('../assets/fonts/Jost-Medium.woff2') format('woff2'),
-    url('../assets/fonts/Jost-Medium.woff') format('woff'),
-    url('../assets/fonts/Jost-Medium.ttf') format('ttf'),
-    url('../assets/fonts/Jost-Medium.eot') format('eot');
+  src: url("../assets/fonts/Jost-Medium.woff2") format("woff2"),
+    url("../assets/fonts/Jost-Medium.woff") format("woff"),
+    url("../assets/fonts/Jost-Medium.ttf") format("ttf"),
+    url("../assets/fonts/Jost-Medium.eot") format("eot");
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Jost';
+  font-family: "Jost";
   font-style: normal;
   font-weight: 700;
-  src: url('../assets/fonts/Jost-Bold.woff2') format('woff2'),
-    url('../assets/fonts/Jost-Bold.woff') format('woff'),
-    url('../assets/fonts/Jost-Bold.ttf') format('ttf'),
-    url('../assets/fonts/Jost-Bold.eot') format('eot');
+  src: url("../assets/fonts/Jost-Bold.woff2") format("woff2"),
+    url("../assets/fonts/Jost-Bold.woff") format("woff"),
+    url("../assets/fonts/Jost-Bold.ttf") format("ttf"),
+    url("../assets/fonts/Jost-Bold.eot") format("eot");
   font-display: swap;
 }
 </style>

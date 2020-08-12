@@ -5,24 +5,26 @@
       <div class="content">
         <div class="box">
           <div class="header">
-            <g-image
-              src="@/assets/images/logos/tur.jpg"
-              alt="Tur Jaktorów logo"
-            />
+            <g-image src="@/assets/images/logos/tur.jpg" alt="Tur Jaktorów logo" />
             <h3>Ludowy Klub Sportowy</h3>
             <h3>Tur Jaktorów</h3>
           </div>
           <div class="infoBox">
             <div class="info">
               <h3 class="subtitle">📝 Dane:</h3>
-              <p><span>Rok założenia:</span> 2001</p>
-              <p><span>Prezes:</span> Bronisław Świdlicki</p>
-              <p><span>Miejscowość:</span> Jaktorów, Mazowieckie</p>
-              <p><span>Ulica:</span> Warszawska 88</p>
+              <p>
+                <span>Prezes:</span> Bronisław Świdlicki
+              </p>
+              <p>
+                <span>Miejscowość:</span> Jaktorów, Mazowieckie
+              </p>
+              <p>
+                <span>Ulica:</span> Warszawska 88
+              </p>
               <p>
                 <span>Kontakt z klubem:</span>
                 {{ " " }}
-                <a href="tel:468565132">+46 586 51 32</a>
+                <a href="tel:468565132">46 856 51 32</a>
               </p>
               <p>
                 <span>Fanpage:</span>
@@ -30,17 +32,24 @@
                 <a
                   href="https://www.facebook.com/lksturjaktorow"
                   target="_blank"
-                  >www.facebook.com/lksturjaktorow</a
-                >
+                >www.facebook.com/lksturjaktorow</a>
               </p>
               <h3 class="subtitle">🏟️ Stadion:</h3>
-              <p><span>Liczba miejsc:</span> 300 miejsc siedzących</p>
-              <p><span>Boisko:</span> 105m x 6m</p>
-              <p><span>Murawa:</span> Naturalna</p>
+              <p>
+                <span>Liczba miejsc:</span> 300 miejsc siedzących
+              </p>
+              <p>
+                <span>Boisko:</span> 105m x 60m
+              </p>
+              <p>
+                <span>Murawa:</span> Naturalna
+              </p>
               <h3 class="subtitle">🏦 Konto bankowe:</h3>
               <p>LKS „TUR” Jaktorów</p>
               <p>ul. Warszawska 88</p>
-              <p><span>Nr konta:</span> 07 1240 3350 1111 0000 3550 3002</p>
+              <p>
+                <span>Nr konta:</span> 07 1240 3350 1111 0000 3550 3002
+              </p>
             </div>
           </div>
         </div>
@@ -57,16 +66,16 @@
 <script>
 export default {
   metaInfo: {
-    title: "O klubie",
+    title: 'O klubie',
     meta: [
       {
-        name: "description",
+        name: 'description',
         content:
-          "Dane o klubie piłkarskim Tur Jaktorów, o miejscowym stadionie. Skontaktuj się z klubem przez telefon lub facebooka.",
+          'Dane o klubie piłkarskim Tur Jaktorów, o miejscowym stadionie. Skontaktuj się z klubem przez telefon lub facebooka.',
       },
     ],
   },
-  name: "About",
+  name: 'About',
 };
 </script>
 

@@ -4,19 +4,15 @@
     <template v-slot:content>
       <div class="match">
         <div>
-          <g-image
-            :src="require(`@/assets/images/logos/${match.logos.teamOne}`)"
-            :alt="'lol'"
-          />
-          <div :class="['score', { soon: match.isText }]">
-            {{ match.score }}
-          </div>
-          <g-image
-            :src="require(`@/assets/images/logos/${match.logos.teamTwo}`)"
-            :alt="'lol'"
-          />
+          <g-image :src="require(`@/assets/images/logos/${match.logos.teamOne}`)" :alt="'lol'" />
+          <div :class="['score', { soon: match.isText }]">{{ match.score }}</div>
+          <g-image :src="require(`@/assets/images/logos/${match.logos.teamTwo}`)" :alt="'lol'" />
         </div>
-        <p class="teamNames">{{ match.clubs }}</p>
+        <p class="teamNames">
+          {{ match.clubs[0] }}
+          <span>-</span>
+          {{ match.clubs[1] }}
+        </p>
       </div>
     </template>
   </Item>
@@ -33,7 +29,7 @@ export default {
     Item,
   },
   computed: {
-    match: function() {
+    match: function () {
       const matches = getMatches(this.selected);
       if (this.firstBox) return matches.matchOne;
       else return matches.matchTwo;
@@ -69,9 +65,14 @@ export default {
 
   .teamNames {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-align: center;
+    line-height: 1.1;
+
+    span {
+      display: block;
+    }
   }
 }
 
@@ -87,10 +88,24 @@ export default {
 
     .teamNames {
       font-size: 18px;
+
+      span {
+        display: initial;
+      }
     }
 
     img {
       width: 100px;
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .match {
+    .teamNames {
+      span {
+        display: block;
+      }
     }
   }
 }
@@ -103,25 +118,15 @@ export default {
   }
 }
 
-/*@media (min-width: 1280px) {
+@media (min-width: 1280px) {
   .match {
-    .score {
-      font-size: 40px;
-    }
-
-    .soon {
-      font-size: 30px;
-    }
-
     .teamNames {
-      font-size: 16px;
-    }
-
-    img {
-      width: 80px;
+      span {
+        display: initial;
+      }
     }
   }
-}*/
+}
 
 @media (min-width: 1440px) {
   .match {
@@ -135,6 +140,22 @@ export default {
 
     img {
       width: 80px;
+    }
+
+    .teamNames {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .match {
+    .teamNames {
+      span {
+        display: initial;
+      }
     }
   }
 }

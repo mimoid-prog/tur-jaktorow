@@ -1,8 +1,6 @@
 <template>
   <Item class="scoreboard">
-    <template v-slot:title
-      >Tabela wyników</template
-    >
+    <template v-slot:title>Tabela wyników</template>
     <template v-slot:content>
       <div class="scoreboard">
         <table>
@@ -43,7 +41,7 @@ export default {
     Item,
   },
   computed: {
-    scoreboard: function() {
+    scoreboard: function () {
       const info = infoAll[this.selected];
       let scoreboard = info.map((team) => ({
         club: team.club,

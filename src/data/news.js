@@ -4,8 +4,12 @@ const news = [
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/2960504907395000",
     content: `
+<<<<<<< HEAD
     <p>II RUNDA: PUCHAR POLSKI</p>
     <p>Dzisiaj o godzinie 18 odbył się mecz pomiędzy WS Warszawa a Turem Jaktorów.</p>
+=======
+    <p>Dzisiaj o godzinie 18 odbył się mecz sparingowy pomiędzy WS Warszawa a Turem Jaktorów.</p>
+>>>>>>> a7267e1731b7116ecf4ac1a0048270604955f536
     <p>Podstawowe 90 minut meczu zakończyło się wynikiem 0:0, jednak w rzutach karnych bramkarz Tura zapewnił naszej drużynie zwycięstwo 5:4! </p>
     `,
   },

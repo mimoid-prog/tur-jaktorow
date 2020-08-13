@@ -14,26 +14,28 @@
 </template>
 
 <script>
-import Vue from 'vue';
-import vSelect from 'vue-select';
-import 'vue-select/dist/vue-select.css';
-Vue.component('v-select', vSelect);
+import Vue from "vue";
+import vSelect from "vue-select";
+import "vue-select/dist/vue-select.css";
+Vue.component("v-select", vSelect);
 
 export default {
-  name: 'SelectBox',
+  name: "SelectBox",
   data: function () {
     return {
-      selected: { label: 'Seniorzy', code: 'senior' },
+      selected: { label: "Seniorzy", code: "senior" },
       options: [
-        { label: 'Seniorzy', code: 'senior' },
-        { label: 'Junior Młodszy', code: 'juniorMlodszy' },
-        { label: 'Trampkarz', code: 'trampkarz' },
+        { label: "Seniorzy", code: "senior" },
+        { label: "2005 (Junior Młodszy)", code: "juniorMlodszy" },
+        { label: "2007/2008 (C2 Trampkarz)", code: "trampkarz" },
+        { label: "2011 (D2 Młodzik)", code: "mlodzik" },
       ],
     };
   },
   watch: {
     selected: function (val) {
-      this.$emit('selected', this.selected.code);
+      console.log(val);
+      this.$emit("selected", this.selected.code);
     },
   },
 };

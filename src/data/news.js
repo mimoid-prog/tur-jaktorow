@@ -4,7 +4,7 @@ const news = [
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/2960504907395000",
     content: `
-    <p>Dzisiaj o godzinie 18 odbył się mecz pomiędzy WS Warszawa a Turem Jaktorów.</p>
+    <p>Dzisiaj o godzinie 18 odbył się mecz sparingowy pomiędzy WS Warszawa a Turem Jaktorów.</p>
     <p>Podstawowe 90 minut meczu zakończyło się wynikiem 0:0, jednak w rzutach karnych bramkarz Tura zapewnił naszej drużynie zwycięstwo 5:4! </p>
     `,
   },

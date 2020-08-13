@@ -25,11 +25,11 @@ const getMatches = (selected) => {
   }
 
   const turMatchOne = schedule[weekOne].matches.filter(
-    (match) => match.teamOne === 0 || match.teamTwo === 0,
+    (match) => match.teamOne === 0 || match.teamTwo === 0
   )[0];
 
   const turMatchTwo = schedule[weekTwo].matches.filter(
-    (match) => match.teamOne === 0 || match.teamTwo === 0,
+    (match) => match.teamOne === 0 || match.teamTwo === 0
   )[0];
 
   const dateOne = turMatchOne.date;
@@ -48,13 +48,14 @@ const getMatches = (selected) => {
     teamTwo: info[turMatchTwo.teamTwo].logo,
   };
 
-  const clubsOne = `${info[turMatchOne.teamOne].club} - ${
-    info[turMatchOne.teamTwo].club
-  }`;
-
-  const clubsTwo = `${info[turMatchTwo.teamOne].club} - ${
-    info[turMatchTwo.teamTwo].club
-  }`;
+  const clubsOne = [
+    info[turMatchOne.teamOne].club,
+    info[turMatchOne.teamTwo].club,
+  ];
+  const clubsTwo = [
+    info[turMatchTwo.teamOne].club,
+    info[turMatchTwo.teamTwo].club,
+  ];
 
   if (currentWeek === 0) {
     titleOne = `Pierwszy mecz - ${dateOne} ${timeOne}`;

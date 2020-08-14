@@ -91,7 +91,6 @@ export default {
 
 .info {
   margin: 30px auto 0;
-  display: inline-block;
 
   .subtitle {
     margin: 10px 0 5px;
@@ -103,6 +102,8 @@ export default {
 
   p {
     margin-bottom: 2px;
+    max-width: 100%;
+    word-wrap: break-word;
 
     span {
       font-weight: 500;

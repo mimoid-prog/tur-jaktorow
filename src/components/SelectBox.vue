@@ -26,7 +26,7 @@ export default {
       selected: { label: 'Seniorzy', code: 'senior' },
       options: [
         { label: 'Seniorzy', code: 'senior' },
-        { label: '2005', code: 'juniorMlodszy' },
+        { label: '2005/2006', code: 'juniorMlodszy' },
         { label: '2007/2008', code: 'trampkarz' },
         { label: '2011', code: 'mlodzik' },
       ],

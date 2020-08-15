@@ -1,11 +1,10 @@
-import currentWeekAll from "@/data/currentWeek";
 import infoAll from "@/data/info";
 import scheduleAll from "@/data/schedule";
 
 const getMatches = (selected) => {
   const info = infoAll[selected];
   const schedule = scheduleAll[selected];
-  const currentWeek = currentWeekAll[selected];
+  const currentWeek = info[0].scoredGoals.length;
 
   let weekOne,
     weekTwo,
@@ -16,20 +15,23 @@ const getMatches = (selected) => {
     isTextOne,
     isTextTwo;
 
-  if (currentWeek === 0 || currentWeek < schedule.length - 1) {
+  if (currentWeek === 0) {
     weekOne = currentWeek;
     weekTwo = currentWeek + 1;
+  } else if (currentWeek === schedule.length) {
+    weekOne = currentWeek - 2;
+    weekTwo = currentWeek - 1;
   } else {
     weekOne = currentWeek - 1;
     weekTwo = currentWeek;
   }
 
   const turMatchOne = schedule[weekOne].matches.filter(
-    (match) => match.teamOne === 0 || match.teamTwo === 0
+    (match) => match.teamOne === 0 || match.teamTwo === 0,
   )[0];
 
   const turMatchTwo = schedule[weekTwo].matches.filter(
-    (match) => match.teamOne === 0 || match.teamTwo === 0
+    (match) => match.teamOne === 0 || match.teamTwo === 0,
   )[0];
 
   const dateOne = turMatchOne.date;
@@ -69,10 +71,9 @@ const getMatches = (selected) => {
     titleTwo = `Następny mecz - ${dateTwo} ${timeTwo}`;
     scoreOne = `${info[turMatchOne.teamOne].scoredGoals[weekOne]} :
     ${info[turMatchOne.teamTwo].scoredGoals[weekOne]}`;
-    scoreTwo = `${info[turMatchTwo.teamOne].scoredGoals[weekTwo]} :
-    ${info[turMatchTwo.teamTwo].scoredGoals[weekTwo]}`;
+    scoreTwo = "wkrótce";
     isTextOne = false;
-    isTextTwo = false;
+    isTextTwo = true;
   } else {
     titleOne = `Przedostatni mecz sezonu - ${dateOne} ${timeOne}`;
     titleTwo = `Ostatni mecz sezonu - ${dateTwo} ${timeTwo}`;

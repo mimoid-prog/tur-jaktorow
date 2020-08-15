@@ -60,7 +60,12 @@ export default {
         points: team.stats[0] * 3 + team.stats[1],
         matches: team.scoredGoals.length,
       }));
-      scoreboard.sort((a, b) => b.points - a.points);
+      scoreboard.sort((a, b) => {
+        if (a.points === b.points) {
+          return b.matches - a.matches;
+        }
+        return b.points - a.points;
+      });
       return scoreboard;
     },
   },

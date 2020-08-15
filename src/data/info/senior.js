@@ -3,9 +3,9 @@ export default [
   {
     club: "LKS Tur Jaktorów",
     logo: "tur.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: [],
+    stats: [1, 0, 0],
+    scoredGoals: [2],
+    lostGoals: [1],
   },
   {
     club: "KS Błonianka II",
@@ -45,16 +45,16 @@ export default [
   {
     club: "KS Zaborowianka",
     logo: "zaborow.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: [],
+    stats: [0, 0, 1],
+    scoredGoals: [1],
+    lostGoals: [2],
   },
   {
     club: "KS Promyk Nowa Sucha",
     logo: "promyk.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: [],
+    stats: [1, 0, 0],
+    scoredGoals: [2],
+    lostGoals: [1],
   },
   {
     club: "UKS Tajfun Brochów",
@@ -94,8 +94,8 @@ export default [
   {
     club: "KS Orzeł Kampinos",
     logo: "orzel.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: [],
+    stats: [0, 0, 1],
+    scoredGoals: [1],
+    lostGoals: [2],
   },
 ];

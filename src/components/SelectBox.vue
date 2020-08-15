@@ -26,15 +26,16 @@ export default {
       selected: { label: 'Seniorzy', code: 'senior' },
       options: [
         { label: 'Seniorzy', code: 'senior' },
-        { label: '2005/2006', code: 'juniorMlodszy' },
-        { label: '2007/2008', code: 'trampkarz' },
-        { label: '2011', code: 'mlodzik' },
+        { label: '2005/2006', code: 'B2JuniorMlodszy2005_2006' },
+        { label: '2007/2008', code: 'C2Trampkarz2007_2008' },
+        { label: '2009', code: 'E1Orlik2009' },
+        { label: '2010', code: 'E2Orlik2010' },
+        { label: '2011', code: 'D2Mlodzik2011' },
       ],
     };
   },
   watch: {
     selected: function (val) {
-      console.log(val);
       this.$emit('selected', this.selected.code);
     },
   },

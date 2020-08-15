@@ -8,8 +8,9 @@
             <th title="Miejsce">M</th>
             <th>Nazwa klubu</th>
             <th title="Zwycięstwa/Remisy/Porażki">Z/R/P</th>
-            <th title="Bilans bramek">B</th>
-            <th title="Punkty">P</th>
+            <th title="Bilans bramek">Bilans</th>
+            <th title="Rozegrane mecze">Mecze</th>
+            <th title="Punkty">Punkty</th>
           </tr>
           <tr v-for="(item, index) in scoreboard" :key="index">
             <td>{{ index + 1 }}.</td>
@@ -22,6 +23,7 @@
             </td>
             <td>{{ item.stats }}</td>
             <td>{{ item.scoredGoals }} : {{ item.lostGoals }}</td>
+            <td>{{ item.matches }}</td>
             <td>{{ item.points }}</td>
           </tr>
         </table>
@@ -31,12 +33,12 @@
 </template>
 
 <script>
-import Item from "@/components/Item.vue";
-import infoAll from "@/data/info";
+import Item from '@/components/Item.vue';
+import infoAll from '@/data/info';
 
 export default {
-  name: "Scoreboard",
-  props: ["selected"],
+  name: 'Scoreboard',
+  props: ['selected'],
   components: {
     Item,
   },
@@ -56,6 +58,7 @@ export default {
             ? 0
             : team.lostGoals.reduce((a, b) => a + b),
         points: team.stats[0] * 3 + team.stats[1],
+        matches: team.scoredGoals.length,
       }));
       scoreboard.sort((a, b) => b.points - a.points);
       return scoreboard;

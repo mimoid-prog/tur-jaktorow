@@ -19,12 +19,12 @@
 </template>
 
 <script>
-import Item from "@/components/Item.vue";
-import getMatches from "@/data/matches";
+import Item from '@/components/Item.vue';
+import getMatches from '@/data/matches';
 
 export default {
-  name: "Match",
-  props: ["firstBox", "selected"],
+  name: 'Match',
+  props: ['firstBox', 'selected'],
   components: {
     Item,
   },
@@ -66,7 +66,6 @@ export default {
   .teamNames {
     margin-top: 10px;
     font-size: 16px;
-    font-weight: 700;
     text-align: center;
     line-height: 1.1;
 

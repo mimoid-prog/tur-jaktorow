@@ -15,12 +15,12 @@ module.exports = {
           "/aktualnosci": {
             changefreq: "weekly",
             priority: 0.9,
-            lastmod: "2020-08-01",
+            lastmod: "2020-08-12",
           },
           "/o-klubie": {
             changefreq: "yearly",
             priority: 0.6,
-            lastmod: "2020-07-25",
+            lastmod: "2020-08-13",
           },
           "/terminarz": {
             changefreq: "weekly",

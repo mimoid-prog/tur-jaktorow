@@ -1,5 +1,14 @@
 const news = [
   {
+    date: "18.08.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/2976469759131848",
+    content: `
+    <p>III RUNDA PUCHAR POLSKI</p>
+    <p>W środę 19 sierpnia o godzinie 17.30 na stadionie w Jaktorowie nasi seniorzy w III rundzie Pucharu Polski zmierzą się z rezerwami Polonia Warszawa S.A.</p>
+    `,
+  },
+  {
     date: "12.08.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/2960504907395000",

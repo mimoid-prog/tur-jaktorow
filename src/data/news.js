@@ -1,11 +1,15 @@
 const news = [
   {
-    date: "18.08.2020",
+    date: "16.08.2020",
     emoji: "⚽",
-    link: "https://www.facebook.com/lksturjaktorow/posts/2976469759131848",
+    link: "https://www.facebook.com/lksturjaktorow/posts/2971721169606707",
     content: `
-    <p>III RUNDA PUCHAR POLSKI</p>
-    <p>W środę 19 sierpnia o godzinie 17.30 na stadionie w Jaktorowie nasi seniorzy w III rundzie Pucharu Polski zmierzą się z rezerwami Polonia Warszawa S.A.</p>
+    <p>Udana inauguracja i komplet punktów dla Tura.</p>
+    <p>Na inaugurację sezonu A Klasy nasi seniorzy na własnym boisku podejmowali KS Orzeł Kampinos.</p>
+    <p>Pierwsze 45 minut nie ułożyło się dla nas tak jak byśmy chcieli, nie potrafiliśmy się utrzymać przy piłce przez co drużyna z Kampinosu stworzyła sobie kilka dogodnych sytuacji bramkowych. Około 30 minucie meczu straciliśmy bramkę z rzutu karnego, a na domiar złego fatalnej kontuzji doznał nasz zawodnik Patryk Kuśmider.</p>
+    <p>W drugiej połowie meczu Tur wyglądał o niebo lepiej, co też przełożyło się na zdobycie dwóch bramek. Na listę strzelców wpisał się Damian Zatyka i Jakub Strzemieczny.</p>
+    <p>Mecz wygrywamy 2 : 1.</p>
+    <p>PS. Patryk trzymaj się mocno. Życzymy Ci szybkiego powrotu do zdrowia i na boisko ⚽💪💪</p>
     `,
   },
   {

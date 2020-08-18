@@ -1,6 +1,14 @@
 <template>
   <Item>
-    <template v-slot:title>{{ match.title }}</template>
+    <template v-slot:title>
+      <span class="title">
+        <span class="title-item">{{ match.title }}</span>
+        <span class="title-item date" v-if="match.date">{{ match.date }}</span>
+        <span class="title-item date" v-else>{{ match.weekDate }}</span>
+        <span class="title-item time" v-if="match.time">{{", g. "}}{{ match.time }}</span>
+        <span class="title-item home" v-if="match.home">{{" "}}{{ match.home }}</span>
+      </span>
+    </template>
     <template v-slot:content>
       <div class="match">
         <div>
@@ -19,12 +27,12 @@
 </template>
 
 <script>
-import Item from '@/components/Item.vue';
-import getMatches from '@/data/matches';
+import Item from "@/components/Item.vue";
+import getMatches from "@/data/matches";
 
 export default {
-  name: 'Match',
-  props: ['firstBox', 'selected'],
+  name: "Match",
+  props: ["firstBox", "selected"],
   components: {
     Item,
   },
@@ -39,6 +47,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.title {
+  .title-item {
+    font-weight: 400;
+    display: block;
+  }
+
+  .title-item:first-child {
+    font-weight: 700;
+  }
+
+  .date,
+  .time {
+    display: initial;
+  }
+}
+
+@media (min-width: 360px) {
+  .title {
+    .home {
+      display: initial;
+    }
+  }
+}
+
 .match {
   div:first-child {
     display: flex;

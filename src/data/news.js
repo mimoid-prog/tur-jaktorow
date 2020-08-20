@@ -1,5 +1,14 @@
 const news = [
   {
+    date: "19.08.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/2981196761992481",
+    content: `
+    <p>Niestety przygoda w Pucharze naszego Tura zakończyła się w dniu wczorajszym po przegranym meczu z rezerwami Polonia Warszawa S.A.</p>
+    <p><a href="https://www.dumastolicy.pl/2020/08/20/galeria-z-meczu-tur-jaktorow-polonia-ii-warszawa-2020-21-opp-trj/">Link do fotorelacji z meczu</a></p>
+    `,
+  },
+  {
     date: "18.08.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/2976469759131848",

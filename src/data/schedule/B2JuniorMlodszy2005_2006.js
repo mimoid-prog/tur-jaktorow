@@ -12,8 +12,8 @@ export default [
       },
       {
         date: "22.08.2020",
-        time: "",
-        home: null,
+        time: "09:30",
+        home: true,
         teamOne: 0,
         teamTwo: 6,
       },
@@ -59,9 +59,9 @@ export default [
         teamTwo: 2,
       },
       {
-        date: "26.08.2020",
-        time: "",
-        home: null,
+        date: "25.08.2020",
+        time: "18:00",
+        home: false,
         teamOne: 1,
         teamTwo: 0,
       },
@@ -73,8 +73,8 @@ export default [
     matches: [
       {
         date: "29.08.2020",
-        time: "",
-        home: null,
+        time: "14:00",
+        home: true,
         teamOne: 0,
         teamTwo: null,
       },
@@ -128,8 +128,8 @@ export default [
       },
       {
         date: "05.09.2020",
-        time: "",
-        home: null,
+        time: "10:00",
+        home: true,
         teamOne: 0,
         teamTwo: 2,
       },

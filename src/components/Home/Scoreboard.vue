@@ -13,7 +13,7 @@
             <th title="Punkty">Punkty</th>
           </tr>
           <tr v-for="(item, index) in scoreboard" :key="index">
-            <td>{{ index + 1 }}.</td>
+            <td>{{ item.place }}</td>
             <td class="club">
               <g-image
                 :src="require(`@/assets/images/logos/${item.logo}`)"
@@ -66,6 +66,23 @@ export default {
         }
         return b.points - a.points;
       });
+
+      let place = 1;
+      let isUsed = false;
+      for (let i = 0; i < scoreboard.length; i++) {
+        if (!isUsed) {
+          scoreboard[i].place = place + '.';
+          isUsed = true;
+        } else scoreboard[i].place = '';
+
+        if (i !== scoreboard.length - 1) {
+          if (scoreboard[i].points !== scoreboard[i + 1].points) {
+            place++;
+            isUsed = false;
+          }
+        }
+      }
+
       return scoreboard;
     },
   },

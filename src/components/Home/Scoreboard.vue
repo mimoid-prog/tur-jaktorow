@@ -52,13 +52,17 @@ export default {
         scoredGoals:
           team.scoredGoals.length === 0
             ? 0
-            : team.scoredGoals.reduce((a, b) => a + b),
+            : team.scoredGoals.reduce(
+                (a, b) => (a === false ? 0 : a) + (b === false ? 0 : b),
+              ),
         lostGoals:
           team.lostGoals.length === 0
             ? 0
-            : team.lostGoals.reduce((a, b) => a + b),
+            : team.lostGoals.reduce(
+                (a, b) => (a === false ? 0 : a) + (b === false ? 0 : b),
+              ),
         points: team.stats[0] * 3 + team.stats[1],
-        matches: team.scoredGoals.length,
+        matches: team.stats[0] + team.stats[1] + team.stats[2],
       }));
       scoreboard.sort((a, b) => {
         if (a.points === b.points) {

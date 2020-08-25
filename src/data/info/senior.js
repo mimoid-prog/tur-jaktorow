@@ -73,9 +73,9 @@ export default [
   {
     club: "LKS Osuchów",
     logo: "osuchow.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [false,false],
-    lostGoals: [false,false],
+    stats: [0, 0, 1],
+    scoredGoals: [false,3],
+    lostGoals: [false,4],
   },
   {
     club: "KS Piast Feliksów",
@@ -94,8 +94,8 @@ export default [
   {
     club: "KS Orzeł Kampinos",
     logo: "orzel.jpg",
-    stats: [0, 0, 1],
-    scoredGoals: [1, false],
-    lostGoals: [2, false],
+    stats: [1, 0, 1],
+    scoredGoals: [1, 4],
+    lostGoals: [2, 3],
   },
 ];

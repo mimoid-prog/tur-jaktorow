@@ -24,8 +24,11 @@
                 >
                   <span>{{ info[match.teamOne].club }}</span>
                   <span class="score">
-                    {{ info[match.teamOne].scoredGoals[week.week] }} -
-                    {{ info[match.teamTwo].scoredGoals[week.week] }}
+                    <template v-if="info[match.teamOne].scoredGoals[week.week] !== false">
+                      {{ info[match.teamOne].scoredGoals[week.week] }} -
+                      {{ info[match.teamTwo].scoredGoals[week.week] }}
+                    </template>
+                    <template v-else>-</template>
                   </span>
                   <span>{{ info[match.teamTwo].club }}</span>
                 </p>

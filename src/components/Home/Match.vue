@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import Item from "@/components/Item.vue";
-import getMatches from "@/data/matches";
+import Item from '@/components/Item.vue';
+import getMatches from '@/data/matches';
 
 export default {
-  name: "Match",
-  props: ["firstBox", "selected"],
+  name: 'Match',
+  props: ['firstBox', 'selected'],
   components: {
     Item,
   },

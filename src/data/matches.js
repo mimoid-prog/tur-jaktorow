@@ -26,22 +26,41 @@ const getMatches = (selected) => {
     weekTwo = currentWeek;
   }
 
-  const turMatchOne = schedule[weekOne].matches.filter(
-    (match) => match.teamOne === 0 || match.teamTwo === 0
+  let turMatchOne = schedule[weekOne].matches.filter(
+    (match) => match.teamOne === 0 || match.teamTwo === 0,
   )[0];
 
-  const turMatchTwo = schedule[weekTwo].matches.filter(
-    (match) => match.teamOne === 0 || match.teamTwo === 0
+  let turMatchTwo = schedule[weekTwo].matches.filter(
+    (match) => match.teamOne === 0 || match.teamTwo === 0,
   )[0];
 
-  const weekDateOne = schedule[weekOne].date;
-  const weekDateTwo = schedule[weekTwo].date;
+  if (turMatchOne.teamOne === null || turMatchOne.teamTwo === null) {
+    weekOne += 1;
+    weekTwo += 1;
 
-  const dateOne = turMatchOne.date;
-  const dateTwo = turMatchTwo.date;
+    turMatchOne = schedule[weekOne].matches.filter(
+      (match) => match.teamOne === 0 || match.teamTwo === 0,
+    )[0];
 
-  const timeOne = turMatchOne.time;
-  const timeTwo = turMatchTwo.time;
+    turMatchTwo = schedule[weekTwo].matches.filter(
+      (match) => match.teamOne === 0 || match.teamTwo === 0,
+    )[0];
+  } else if (turMatchTwo.teamOne === null || turMatchTwo.teamTwo === null) {
+    weekTwo += 1;
+
+    turMatchTwo = schedule[weekTwo].matches.filter(
+      (match) => match.teamOne === 0 || match.teamTwo === 0,
+    )[0];
+  }
+
+  let weekDateOne = schedule[weekOne].date;
+  let weekDateTwo = schedule[weekTwo].date;
+
+  let dateOne = turMatchOne.date;
+  let dateTwo = turMatchTwo.date;
+
+  let timeOne = turMatchOne.time;
+  let timeTwo = turMatchTwo.time;
 
   let homeOne, homeTwo;
 
@@ -53,21 +72,20 @@ const getMatches = (selected) => {
   else if (turMatchTwo.home === false) homeTwo = "(wyjazd)";
   else homeTwo = "";
 
-  const logosOne = {
+  let logosOne = {
     teamOne: info[turMatchOne.teamOne].logo,
     teamTwo: info[turMatchOne.teamTwo].logo,
   };
-
-  const logosTwo = {
+  let logosTwo = {
     teamOne: info[turMatchTwo.teamOne].logo,
     teamTwo: info[turMatchTwo.teamTwo].logo,
   };
 
-  const clubsOne = [
+  let clubsOne = [
     info[turMatchOne.teamOne].club,
     info[turMatchOne.teamTwo].club,
   ];
-  const clubsTwo = [
+  let clubsTwo = [
     info[turMatchTwo.teamOne].club,
     info[turMatchTwo.teamTwo].club,
   ];
@@ -83,7 +101,7 @@ const getMatches = (selected) => {
     titleOne = `Poprzedni mecz`;
     titleTwo = `Następny mecz`;
     scoreOne = `${info[turMatchOne.teamOne].scoredGoals[weekOne]} :
-    ${info[turMatchOne.teamTwo].scoredGoals[weekOne]}`;
+      ${info[turMatchOne.teamTwo].scoredGoals[weekOne]}`;
     scoreTwo = "wkrótce";
     isTextOne = false;
     isTextTwo = true;
@@ -91,9 +109,9 @@ const getMatches = (selected) => {
     titleOne = `Przedostatni mecz sezonu`;
     titleTwo = `Ostatni mecz sezonu`;
     scoreOne = `${info[turMatchOne.teamOne].scoredGoals[weekOne]} :
-    ${info[turMatchOne.teamTwo].scoredGoals[weekOne]}`;
+      ${info[turMatchOne.teamTwo].scoredGoals[weekOne]}`;
     scoreTwo = `${info[turMatchTwo.teamOne].scoredGoals[weekTwo]} :
-    ${info[turMatchTwo.teamTwo].scoredGoals[weekTwo]}`;
+      ${info[turMatchTwo.teamTwo].scoredGoals[weekTwo]}`;
     isTextOne = false;
     isTextTwo = false;
   }

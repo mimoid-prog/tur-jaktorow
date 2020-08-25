@@ -1,5 +1,17 @@
 const news = [
   {
+    date: "25.08.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/2997268730385284",
+    content: `
+    <p>Drużyna Juniorów młodszych Tura Jaktorów w ostatnim czasie zainaugurowała swoją ligę.</p>
+    <p>W sobotę w pierwszej kolejce podejmowali u siebie zespół Naprzód Stare Babice ulegając im 1-3. We wtorek drużyna Tura wyruszyła do Maciejowic na najdalszy wyjazd w lidze (ok. 120km), aby zagrać mecz z tamtejszą Wisłą. Spotkanie zakończyło się bezbramkowym remisem.</p>
+    <p>Podkreślić trzeba fakt, że nasza drużyna gra w lidze rocznika 2005 w większości chłopcami złożonych z roczników 2006/07/08.</p>
+    <p>Tur Jaktorów - Naprzód Stare Babice 1-3</p>
+    <p>Wisła Maciejowice - Tur Jaktorów 0-0</p>
+    `,
+  },
+  {
     date: "19.08.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/2981196761992481",

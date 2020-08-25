@@ -3,16 +3,16 @@ export default [
   {
     club: "LKS Tur Jaktorów",
     logo: "tur.jpg",
-    stats: [0, 0, 1],
-    scoredGoals: [1],
-    lostGoals: [3],
+    stats: [0, 1, 1],
+    scoredGoals: [1,0],
+    lostGoals: [3,0],
   },
   {
     club: "WISŁA Maciejowice",
     logo: "wisla-maciejowice.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: []
+    stats: [0, 1, 0],
+    scoredGoals: [false,0],
+    lostGoals: [false,0]
   },
   {
     club: "Polonia Warszawa SP. Z O.O.",

@@ -3,16 +3,16 @@ export default [
   {
     club: "LKS Tur Jaktorów",
     logo: "tur.jpg",
-    stats: [1, 0, 1],
-    scoredGoals: [2,2],
-    lostGoals: [1,4],
+    stats: [1, 0, 2],
+    scoredGoals: [2,2,0],
+    lostGoals: [1,4,2],
   },
   {
     club: "KS Błonianka II",
     logo: "blonianka.jpg",
-    stats: [2, 0, 0],
-    scoredGoals: [5,4],
-    lostGoals: [3,2],
+    stats: [2, 1, 0],
+    scoredGoals: [5,4,2],
+    lostGoals: [3,2,2],
   },
   {
     club: "KP Blizne",
@@ -38,9 +38,9 @@ export default [
   {
     club: "KP Józefowianka Józefów",
     logo: "jozefow.jpg",
-    stats: [2, 0, 0],
-    scoredGoals: [4,6],
-    lostGoals: [0,3],
+    stats: [3, 0, 0],
+    scoredGoals: [4,6,2],
+    lostGoals: [0,3,0],
   },
   {
     club: "KS Zaborowianka",
@@ -52,9 +52,9 @@ export default [
   {
     club: "KS Promyk Nowa Sucha",
     logo: "promyk.jpg",
-    stats: [2, 0, 0],
-    scoredGoals: [2,3],
-    lostGoals: [1,2],
+    stats: [3, 0, 0],
+    scoredGoals: [2,3,4],
+    lostGoals: [1,2,1],
   },
   {
     club: "UKS Tajfun Brochów",
@@ -73,16 +73,16 @@ export default [
   {
     club: "LKS Osuchów",
     logo: "osuchow.jpg",
-    stats: [0, 0, 1],
-    scoredGoals: [false,3],
-    lostGoals: [false,4],
+    stats: [0, 1, 1],
+    scoredGoals: [false,3,2],
+    lostGoals: [false,4,2],
   },
   {
     club: "KS Piast Feliksów",
     logo: "feliksow.jpg",
-    stats: [0, 0, 2],
-    scoredGoals: [0,3],
-    lostGoals: [3,9],
+    stats: [0, 0, 3],
+    scoredGoals: [0,3,1],
+    lostGoals: [3,9,4],
   },
   {
     club: "LKS Chlebnia II",

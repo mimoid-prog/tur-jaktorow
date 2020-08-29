@@ -1,5 +1,13 @@
 const news = [
   {
+    date: "29.08.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3008891785889645",
+    content: `
+    <p>W dniu dzisiejszym nasz rocznik 2007 rozegrał mecz sparingowy w Guzowie z tamtejszą Ģuzovią. Spotkanie obfitowało w wiele ciekawych zagrań i parad bramkarzy. Ostatecznie nasza drużyna pokonała Ģuzovię 1-4. </p>
+    `,
+  },
+  {
     date: "25.08.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/2997268730385284",

@@ -1,5 +1,14 @@
 const news = [
   {
+    date: "03.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3024941477618009",
+    content: `
+    <p>W dniu dzisiejszym drużyna Tura Jaktorów rocznik 2007/08 zainaugurowała rozgrywki ligowe. Do Jaktorowa przyjechała drużyna Klub Sportowy Mszczonowianka. Nasi chłopcy w tym meczu bardzo dzielnie walczyli i po świetnych strzałach pokonali drużynę ze Mszczonowa.</p>
+    <p>Tur Jaktorów - KS Mszczonowianka 3-0</p>
+    `,
+  },
+  {
     date: "29.08.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/3008891785889645",

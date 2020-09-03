@@ -3,9 +3,9 @@ export default [
   {
     club: "LKS Tur Jaktorów",
     logo: "tur.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: []
+    stats: [1, 0, 0],
+    scoredGoals: [3],
+    lostGoals: [0]
   },
   {
     club: "Wrzos Międzyborów",
@@ -31,9 +31,9 @@ export default [
   {
     club: "KS Mszczonowianka",
     logo: "mszczonowianka.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: []
+    stats: [0, 0, 1],
+    scoredGoals: [0],
+    lostGoals: [3]
   },
   {
     club: "KS Guzovia",

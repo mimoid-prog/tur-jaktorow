@@ -116,6 +116,14 @@ const getMatches = (selected) => {
     isTextTwo = false;
   }
 
+  if (turMatchOne.canceled) {
+    scoreOne = "odwołany";
+    isTextOne = true;
+  } else if (turMatchTwo.canceled) {
+    scoreTwo = "odwołany";
+    isTextTwo = true;
+  }
+
   return {
     matchOne: {
       title: titleOne,

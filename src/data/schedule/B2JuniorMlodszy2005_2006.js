@@ -9,6 +9,7 @@ export default [
         home: null,
         teamOne: 1,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "22.08.2020",
@@ -16,6 +17,7 @@ export default [
         home: true,
         teamOne: 0,
         teamTwo: 6,
+        canceled: false,
       },
       {
         date: "22.08.2020",
@@ -23,6 +25,7 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: 5,
+        canceled: true,
       },
       {
         date: "22.08.2020",
@@ -30,6 +33,7 @@ export default [
         home: null,
         teamOne: 3,
         teamTwo: 4,
+        canceled: false,
       },
     ],
   },
@@ -43,6 +47,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "26.08.2020",
@@ -50,6 +55,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: 3,
+        canceled: false,
       },
       {
         date: "26.08.2020",
@@ -57,6 +63,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: 2,
+        canceled: true,
       },
       {
         date: "25.08.2020",
@@ -64,6 +71,7 @@ export default [
         home: false,
         teamOne: 1,
         teamTwo: 0,
+        canceled: false,
       },
     ],
   },
@@ -77,6 +85,7 @@ export default [
         home: true,
         teamOne: 0,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "29.08.2020",
@@ -84,6 +93,7 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: 1,
+        canceled: true,
       },
       {
         date: "29.08.2020",
@@ -91,6 +101,7 @@ export default [
         home: null,
         teamOne: 3,
         teamTwo: 6,
+        canceled: false,
       },
       {
         date: "29.08.2020",
@@ -98,6 +109,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: 5,
+        canceled: false,
       },
     ],
   },
@@ -111,6 +123,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "05.09.2020",
@@ -118,6 +131,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: 4,
+        canceled: false,
       },
       {
         date: "05.09.2020",
@@ -125,6 +139,7 @@ export default [
         home: null,
         teamOne: 1,
         teamTwo: 3,
+        canceled: false,
       },
       {
         date: "05.09.2020",
@@ -132,6 +147,7 @@ export default [
         home: true,
         teamOne: 0,
         teamTwo: 2,
+        canceled: true,
       },
     ],
   },
@@ -145,13 +161,15 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: null,
+        canceled: true,
       },
       {
         date: "09.09.2020",
-        time: "",
-        home: null,
+        time: "17:00",
+        home: false,
         teamOne: 3,
         teamTwo: 0,
+        canceled: false,
       },
       {
         date: "09.09.2020",
@@ -159,6 +177,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: 1,
+        canceled: false,
       },
       {
         date: "09.09.2020",
@@ -166,6 +185,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: 6,
+        canceled: false,
       },
     ],
   },
@@ -179,6 +199,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "12.09.2020",
@@ -186,6 +207,7 @@ export default [
         home: null,
         teamOne: 1,
         teamTwo: 5,
+        canceled: false,
       },
       {
         date: "12.09.2020",
@@ -193,6 +215,7 @@ export default [
         home: null,
         teamOne: 0,
         teamTwo: 4,
+        canceled: false,
       },
       {
         date: "12.09.2020",
@@ -200,6 +223,7 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: 3,
+        canceled: true,
       },
     ],
   },
@@ -213,6 +237,7 @@ export default [
         home: null,
         teamOne: 3,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "19.09.2020",
@@ -220,6 +245,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: 2,
+        canceled: true,
       },
       {
         date: "19.09.2020",
@@ -227,6 +253,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: 0,
+        canceled: false,
       },
       {
         date: "19.09.2020",
@@ -234,6 +261,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: 1,
+        canceled: false,
       },
     ],
   },
@@ -247,6 +275,7 @@ export default [
         home: null,
         teamOne: 1,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "26.09.2020",
@@ -254,6 +283,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: 0,
+        canceled: false,
       },
       {
         date: "26.09.2020",
@@ -261,6 +291,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: 2,
+        canceled: true,
       },
       {
         date: "26.09.2020",
@@ -268,6 +299,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: 3,
+        canceled: false,
       },
     ],
   },
@@ -281,6 +313,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "03.10.2020",
@@ -288,6 +321,7 @@ export default [
         home: null,
         teamOne: 3,
         teamTwo: 5,
+        canceled: false,
       },
       {
         date: "03.10.2020",
@@ -295,6 +329,7 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: 6,
+        canceled: true,
       },
       {
         date: "03.10.2020",
@@ -302,6 +337,7 @@ export default [
         home: null,
         teamOne: 0,
         teamTwo: 1,
+        canceled: false,
       },
     ],
   },
@@ -315,6 +351,7 @@ export default [
         home: null,
         teamOne: 0,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "10.10.2020",
@@ -322,6 +359,7 @@ export default [
         home: null,
         teamOne: 1,
         teamTwo: 2,
+        canceled: true,
       },
       {
         date: "10.10.2020",
@@ -329,6 +367,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: 3,
+        canceled: false,
       },
       {
         date: "10.10.2020",
@@ -336,6 +375,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: 4,
+        canceled: false,
       },
     ],
   },
@@ -349,6 +389,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "17.10.2020",
@@ -356,6 +397,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: 6,
+        canceled: false,
       },
       {
         date: "17.10.2020",
@@ -363,6 +405,7 @@ export default [
         home: null,
         teamOne: 3,
         teamTwo: 1,
+        canceled: false,
       },
       {
         date: "17.10.2020",
@@ -370,6 +413,7 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: 0,
+        canceled: true,
       },
     ],
   },
@@ -383,6 +427,7 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: null,
+        canceled: true,
       },
       {
         date: "24.10.2020",
@@ -390,6 +435,7 @@ export default [
         home: null,
         teamOne: 0,
         teamTwo: 3,
+        canceled: false,
       },
       {
         date: "24.10.2020",
@@ -397,6 +443,7 @@ export default [
         home: null,
         teamOne: 1,
         teamTwo: 4,
+        canceled: false,
       },
       {
         date: "24.10.2020",
@@ -404,6 +451,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: 5,
+        canceled: false,
       },
     ],
   },
@@ -417,6 +465,7 @@ export default [
         home: null,
         teamOne: 6,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "07.11.2020",
@@ -424,6 +473,7 @@ export default [
         home: null,
         teamOne: 5,
         teamTwo: 1,
+        canceled: false,
       },
       {
         date: "07.11.2020",
@@ -431,6 +481,7 @@ export default [
         home: null,
         teamOne: 4,
         teamTwo: 0,
+        canceled: false,
       },
       {
         date: "07.11.2020",
@@ -438,6 +489,7 @@ export default [
         home: null,
         teamOne: 3,
         teamTwo: 2,
+        canceled: true,
       },
     ],
   },
@@ -451,6 +503,7 @@ export default [
         home: null,
         teamOne: 3,
         teamTwo: null,
+        canceled: false,
       },
       {
         date: "14.11.2020",
@@ -458,6 +511,7 @@ export default [
         home: null,
         teamOne: 2,
         teamTwo: 4,
+        canceled: true,
       },
       {
         date: "14.11.2020",
@@ -465,6 +519,7 @@ export default [
         home: null,
         teamOne: 0,
         teamTwo: 5,
+        canceled: false,
       },
       {
         date: "14.11.2020",
@@ -472,6 +527,7 @@ export default [
         home: null,
         teamOne: 1,
         teamTwo: 6,
+        canceled: false,
       },
     ],
   },

@@ -1,5 +1,28 @@
 const news = [
   {
+    date: "06.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3032347536877403",
+    content: `
+    <p>Ważna wygrana. W sobotnie popołudnie nasi seniorzy wyjechali do Sochaczewa, żeby rozegrać 4 kolejkę A-klasy z drużyną Tajfun Brochów.</p>
+    <p>Mecz rozpoczął się w dużym słońcu, a skończył burzą choć w sercach kibiców i zawodników ciągle było dużo słońca ponieważ Tur  to spotkanie wygrał.  W tym meczu było wszystko dużo walki, strzałów, parad bramkarzy, w końcu nasze prowadzenie od 48 minuty po strzale naszego kapitana Piotra Sadowskiego. Każdy z zebranych kibiców myślał, że TUR to spotkanie wygra sędzia na  cztery minuty przed końcem meczu przyznał karnego drużynie gospodarzy. Na szczęście w naszych szeregach gra Jakub Kłos który wyciagnał się jak struna i obronił karnego, dzięki temu mogliśmy się cieszyć z kolejnych 3 punktów. Wielkie gratulacje za zaangażowanie i wolę walki dla naszych piłkarzy 💪⚽💪</p>
+    `,
+  },
+  {
+    date: "06.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3032342596877897",
+    content: `
+    <p>Fajny weekend w wykonaniu młodych adeptów futbolu z  Jaķtorowa. Wszystkie nasze roczniki grające w ligach w sobotę rozpoczęły swoje zmagania. Drużyny Orlików i Młodzików Tura Jaktorów podejmowały u siebie odpowiednio drużyny Relaksu Radziwiłów, Pogoń II Grodzisk Mazowiecki i z obydwu pojedynków wychodzili zwycięsko.</p>
+    <p>Nasza najmłodsza drużyna uczestnicząca w rozgrywkach MZPN Orlik Rocznik 2011 została pokonana przez AP Żyrardów. Drużyna Juniorów Młodszych nie rozegrała meczu ponieważ Polonia Warszawa S.A. wycofała się z rozgrywek.</p>
+    <p>Trampkarze swój mecz rozegrali w czwartek. Pokonali drużynę KS Mszczonowianka 3-0. Duże podziękowania należą się wszystkim naszym zawodnikom. </p>
+    <p>Tur Jaktorów - Relax Radziwiłłów 7-5</p>
+    <p>Tur Jaktorów - Pogoń  Grodzisk Mazowiecki 5-3</p>
+    <p>Tur Jaktorów - Akademia Piłkarska Żyrardowianka Żyrardów 1-18</p>
+    <p>Tur Jaktorów - Klub Sportowy Mszczonowianka 3-0</p>
+    `,
+  },
+  {
     date: "03.09.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/3024941477618009",

@@ -3,9 +3,9 @@ export default [
     {
       club: "LKS Tur Jaktorów",
       logo: "tur.jpg",
-      stats: [0, 0, 0],
-      scoredGoals: [],
-      lostGoals: [],
+      stats: [0, 0, 1],
+      scoredGoals: [1],
+      lostGoals: [18],
     },
     {
       club: "PKS Mustangi",
@@ -38,8 +38,8 @@ export default [
     {
       club: "AP Żyrardowianka",
       logo: "zyrardowianka-akademia.jpg",
-      stats: [0, 0, 0],
-      scoredGoals: [],
-      lostGoals: []
+      stats: [1, 0, 0],
+      scoredGoals: [18],
+      lostGoals: [1]
     },
   ];

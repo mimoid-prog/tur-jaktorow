@@ -8,7 +8,7 @@
             <th title="Miejsce">M</th>
             <th>Nazwa klubu</th>
             <th title="Zwycięstwa/Remisy/Porażki">Z/R/P</th>
-            <th title="Bilans bramek">Bilans</th>
+            <th title="Bilans bramek">Bramki</th>
             <th title="Rozegrane mecze">Mecze</th>
             <th title="Punkty">Punkty</th>
           </tr>

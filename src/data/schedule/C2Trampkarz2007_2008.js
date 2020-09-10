@@ -46,8 +46,8 @@ export default [
       },
       {
         date: "12.09.2020",
-        time: "",
-        home: null,
+        time: "14:00",
+        home: false,
         teamOne: 1,
         teamTwo: 0,
       },
@@ -59,8 +59,8 @@ export default [
     matches: [
       {
         date: "19.09.2020",
-        time: "",
-        home: null,
+        time: "10:00",
+        home: true,
         teamOne: 0,
         teamTwo: 5,
       },

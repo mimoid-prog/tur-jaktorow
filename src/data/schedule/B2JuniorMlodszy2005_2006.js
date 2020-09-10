@@ -214,7 +214,7 @@ export default [
         time: "",
         home: null,
         teamOne: 0,
-        teamTwo: 4,
+        teamTwo: null,
         canceled: false,
       },
       {
@@ -248,9 +248,9 @@ export default [
         canceled: true,
       },
       {
-        date: "19.09.2020",
-        time: "",
-        home: null,
+        date: "20.09.2020",
+        time: "14:00",
+        home: false,
         teamOne: 5,
         teamTwo: 0,
         canceled: false,
@@ -279,8 +279,8 @@ export default [
       },
       {
         date: "26.09.2020",
-        time: "",
-        home: null,
+        time: "10:00",
+        home: false,
         teamOne: 6,
         teamTwo: 0,
         canceled: false,

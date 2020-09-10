@@ -31,9 +31,9 @@ export default [
     date: "12.09.2020",
     matches: [
       {
-        date: "12.09.2020",
-        time: "",
-        home: null,
+        date: "13.09.2020",
+        time: "10:30",
+        home: false,
         teamOne: 5,
         teamTwo: 3,
       },

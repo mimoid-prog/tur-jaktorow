@@ -10,9 +10,9 @@ export default [
     {
       club: "LKS Wrzos Międzyborów",
       logo: "wrzos.jpg",
-      stats: [0, 0, 0],
-      scoredGoals: [],
-      lostGoals: []
+      stats: [1, 0, 0],
+      scoredGoals: [8],
+      lostGoals: [1]
     },
     {
       club: "PKS Mustangi",
@@ -38,8 +38,8 @@ export default [
     {
       club: "GKS Orion-Puls",
       logo: "orion-puls.jpg",
-      stats: [0, 0, 0],
-      scoredGoals: [],
-      lostGoals: []
+      stats: [0, 0, 1],
+      scoredGoals: [1],
+      lostGoals: [8]
     },
   ];

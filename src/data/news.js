@@ -1,5 +1,16 @@
 const news = [
   {
+    date: "10.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3045610708884419",
+    content: `
+    <p>Wygrana Juniorów Młodszych.</p>
+    <p>W środowe popołudnie nasza najstarsza drużyna juniorów wybrała się do Łaskarzewa, aby zagrać mecz ligowy z tamtejszym Promnikiem. Nasi chłopcy dzielnie znieśli dwu godzinną podróż i już po 15 minutach prowadzili 0-2, ale drużyna z minuty na minutę grała coraz lepiej i strzeliła nam dwie bramki i do przerwy wynik meczu był sprawą otwartą. W drugiej połowie zawodnicy Tura znów szybko wyszli na dwu bramkowe prowadzenie, którego już nie oddali do końca meczu. </p>
+    <p>Wielkie gratulacje dla całej drużyny.</p>
+    <p>Promnik Łaskarzew - Tur Jaktorów 2-4</p>
+    `,
+  },
+  {
     date: "06.09.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/3032347536877403",

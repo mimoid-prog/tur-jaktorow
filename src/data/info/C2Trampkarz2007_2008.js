@@ -10,9 +10,9 @@ export default [
   {
     club: "Wrzos Międzyborów",
     logo: "wrzos.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: []
+    stats: [1, 0, 0],
+    scoredGoals: [6],
+    lostGoals: [3]
   },
   {
     club: "LKS Osuchów",
@@ -38,8 +38,8 @@ export default [
   {
     club: "KS Guzovia",
     logo: "guzovia.jpg",
-    stats: [0, 0, 0],
-    scoredGoals: [],
-    lostGoals: []
+    stats: [0, 0, 1],
+    scoredGoals: [3],
+    lostGoals: [6]
   },
 ];

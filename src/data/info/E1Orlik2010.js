@@ -3,16 +3,16 @@ export default [
     {
       club: "LKS Tur Jaktorów",
       logo: "tur.jpg",
-      stats: [1, 0, 0],
-      scoredGoals: [7],
-      lostGoals: [5],
+      stats: [2, 0, 0],
+      scoredGoals: [7,10],
+      lostGoals: [4,2],
     },
     {
       club: "Unia II Boryszew",
       logo: "unia-boryszew.jpg",
-      stats: [0, 0, 0],
-      scoredGoals: [],
-      lostGoals: []
+      stats: [0, 0, 1],
+      scoredGoals: [false,2],
+      lostGoals: [false,10]
     },
     {
       club: "PKS Legion Pruszków",
@@ -32,7 +32,7 @@ export default [
       club: "GLKS Relax Radziwiłłów",
       logo: "relax-radziwillow.jpg",
       stats: [0, 0, 1],
-      scoredGoals: [5],
+      scoredGoals: [4],
       lostGoals: [7]
     },
     {

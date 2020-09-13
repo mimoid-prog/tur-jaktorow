@@ -3,23 +3,23 @@ export default [
     {
       club: "LKS Tur Jaktorów",
       logo: "tur.jpg",
-      stats: [0, 0, 1],
-      scoredGoals: [1],
-      lostGoals: [18],
+      stats: [0, 0, 2],
+      scoredGoals: [1,0],
+      lostGoals: [18,17],
     },
     {
       club: "PKS Mustangi",
       logo: "mustangi.jpg",
-      stats: [1, 0, 0],
-      scoredGoals: [11],
-      lostGoals: [6]
+      stats: [1, 0, 1],
+      scoredGoals: [11,17],
+      lostGoals: [6,0]
     },
     {
       club: "LKS Chlebnia",
       logo: "chlebnia.jpg",
-      stats: [1, 0, 0],
-      scoredGoals: [13],
-      lostGoals: [4]
+      stats: [2, 0, 0],
+      scoredGoals: [13,5],
+      lostGoals: [4,4]
     },
     {
       club: "KS Mszczonowianka",
@@ -31,9 +31,9 @@ export default [
     {
       club: "KS Błonianka II",
       logo: "blonianka.jpg",
-      stats: [0, 0, 1],
-      scoredGoals: [6],
-      lostGoals: [11]
+      stats: [0, 0, 2],
+      scoredGoals: [6,4],
+      lostGoals: [11,5]
     },
     {
       club: "AP Żyrardowianka",

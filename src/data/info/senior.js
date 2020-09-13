@@ -3,9 +3,9 @@ export default [
   {
     club: "LKS Tur Jaktorów",
     logo: "tur.jpg",
-    stats: [2, 0, 2],
-    scoredGoals: [2,2,0,1],
-    lostGoals: [1,4,2,0],
+    stats: [3, 0, 2],
+    scoredGoals: [2,2,0,1,1],
+    lostGoals: [1,4,2,0,0],
   },
   {
     club: "KS Błonianka II",
@@ -17,9 +17,9 @@ export default [
   {
     club: "KP Blizne",
     logo: "blizne.jpg",
-    stats: [2, 1, 1],
-    scoredGoals: [0,3,5,1],
-    lostGoals: [4,0,2,1],
+    stats: [2, 1, 2],
+    scoredGoals: [0,3,5,1,0],
+    lostGoals: [4,0,2,1,1],
   },
   {
     club: "LKS Wrzos Międzyborów",

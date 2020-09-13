@@ -1,5 +1,17 @@
 const news = [
   {
+    date: "13.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3054639814648175",
+    content: `
+    <p>Kolejny weekend piłkarski za nami. Nasze młode drużyny z różnym skutkiem rywalizowały w meczach ligowych z przeciwnikami. Najstarsza drużyna Juniorów Młodszych nie grała meczu z powodu wycofania się z rozgrywek drużyny Marymont Warszawa. Nasi Trampkarze rocznik 2007/08 rywalizowali w Derbach Gminy z Wrzosem Międzyborów i po bardzo dobrej grze wrócili do Jaktorowa ze zwycięstwem. Drużyna Młodzików rocznik 2009 przegrali  mecz wyjazdowy z drużyną Wrzosu. Orliki pojechali do Sochaczewa na mecz z Unią Boryszew i także wrócili z 3 punktami do domu. Nasza najmłodsza drużyna uczestnicząca w rozgrywkach ligowych Żaki przegrała swój mecz z  PKS Mustangi. Wielkie gratulacje dla wszystkich zawodników i trenerów Tura Jaktorów.</p>
+    <p>Trampkarze: Wrzos Międzyborów - Tur Jaktorów 0-13</p>
+    <p>Młodziki: Wrzos Międzyborów - Tur Jaktorów 4-1</p>
+    <p>Orliki: Unia Boryszew - Tur Jaktorów 2-10</p>
+    <p>Żaki: Tur Jaktorów - PKS Mustangi 0-18</p>
+    `,
+  },
+  {
     date: "10.09.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/3045610708884419",

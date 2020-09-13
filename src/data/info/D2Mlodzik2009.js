@@ -3,16 +3,16 @@ export default [
     {
       club: "LKS Tur Jaktorów",
       logo: "tur.jpg",
-      stats: [1, 0, 0],
-      scoredGoals: [5],
-      lostGoals: [3],
+      stats: [1, 0, 1],
+      scoredGoals: [5,1],
+      lostGoals: [3,4],
     },
     {
       club: "LKS Wrzos Międzyborów",
       logo: "wrzos.jpg",
-      stats: [1, 0, 0],
-      scoredGoals: [8],
-      lostGoals: [1]
+      stats: [2, 0, 0],
+      scoredGoals: [8,4],
+      lostGoals: [1,1]
     },
     {
       club: "PKS Mustangi",

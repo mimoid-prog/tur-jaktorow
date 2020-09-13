@@ -4,15 +4,15 @@ export default [
     club: "LKS Tur Jaktorów",
     logo: "tur.jpg",
     stats: [1, 0, 0],
-    scoredGoals: [3],
-    lostGoals: [0]
+    scoredGoals: [3,13],
+    lostGoals: [0,0]
   },
   {
     club: "Wrzos Międzyborów",
     logo: "wrzos.jpg",
     stats: [1, 0, 0],
-    scoredGoals: [6],
-    lostGoals: [3]
+    scoredGoals: [6,0],
+    lostGoals: [3,13]
   },
   {
     club: "LKS Osuchów",

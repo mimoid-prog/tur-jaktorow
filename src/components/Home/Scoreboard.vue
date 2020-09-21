@@ -81,10 +81,10 @@ export default {
 
         if (i !== scoreboard.length - 1) {
           if (scoreboard[i].points !== scoreboard[i + 1].points) {
-            place++;
             isUsed = false;
           }
         }
+        place++;
       }
 
       return scoreboard;

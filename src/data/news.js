@@ -1,5 +1,55 @@
 const news = [
   {
+    date: "21.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3078081275637362",
+    content: `
+    <p>Derby gminy Jaktorów dla TURA 🔥💥💪⚽🔥</p>
+    <p>W 6 kolejce A Klasy naszym seniorom przyszło się zmierzyć na wyjeździe z Wrzos Międzyborów. Mecze ligowe między Turem, a Wrzosem dostarczały zawsze wiele emocji i tak też było tym razem
+    Początek meczu był bardzo nerwowy w wykonaniu Tura, ale z każdą minutą gry nasi piłkarze zaczęli utrzymywać się dłużej przy piłce stwarzając groźne sytuacje pod bramką gospodarzy. Wrzos również zagroził kilkukrotnie naszej bramce, ale obronną ręką wychodził nasz bramkarz🤲</p>
+    <p>Do przerwy licznie zgromadzeni kibice nie zobaczyli strzelonych bramek.
+    Po przerwie ta sytuacja się zmieniła. W 55 minucie po dobrym podaniu z głębi pola za linię obrońców Wrzosu piłka trafiła pod nogi naszego napastnika Michała Miodka, który wprowadził się w pole karne gdzie został sfaulowany. Rzut karny pewnym strzałem na bramkę zamienił Bartosz Maciejewski.</p>
+    <p>W 68 minucie na boisku pojawił nasz pomocnik Maciej Niedziński, który zrobił prawdziwe wejście smoka 🐲🐲, ponieważ w 70 minucie po jego strzale prowadzimy 0 : 2.</p>
+    <p>W 75 minucie Wrzos strzela nam bramkę kontaktową.
+    Do końca meczu wynik już się nie zmienił.</p>
+    <p>Wygrywam 1 : 2 zaliczając przy tym trzecie zwycięstwo z rzędu. </p>
+    <p>#BrawoDRUŻYNA 🔥💥⚽💪</p>
+    <p>#TylkoTUR</p>
+    <p>#DERBYgminy</p>
+    `,
+  },
+  {
+    date: "20.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3077706552341501",
+    content: `
+    <p>Za nami kolejny piłkarski weekend. Młodzieżowe drużyny Tura rozgrywały swoje mecze w ramach rozgrywek Mazowieckiego Związku Piłki Nożnej.</p>
+    <p>⚽Najstarsza drużyna Juniorów Młodszych wybrała się do Nadarzyna i po bardzo ciężkim i wymagajacym meczu wróciła do Jaktorowa z jednym punktem.</p>
+    <p>⚽Trampkarze swój mecz rozegrają w innym terminie.</p>
+    <p>⚽Młodziki pokonali w meczu rozgrywanym w Jaktorowie drużynę Orion Cegłów.</p>
+    <p>⚽Orliki podejmowali u siebie AP Żyrardów , w tym meczu padł wynik remisowy.</p>
+    <p>⚽Orliki rocznik 2011 rozegrali mecz wyjazdowy w Chlebni z tamtejszą LKS Chlebnia, w którym również padł remis.</p>
+    <p>Duże podziękowania dla wszystkich zawodników Tura Jaktorów.</p>
+    <p>GLKS Nadarzyn - Tur Jaktorów 1-1</p>
+    <p>Tur Jaktorów - Guzovia Guzów przełożony</p>
+    <p>Tur Jaktorów - Orion Cegłów  15 : 0</p>
+    <p>Tur Jaktorów - Akademia Piłkarska Żyrardowianka Żyrardów 9-9</p>
+    <p>LKS Chlebnia - Tur Jaktoŕow 5-5</p>
+    `,
+  },
+  {
+    date: "19.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3071571352955021",
+    content: `
+    <p>W dniu dzisiejszym nasi młodzi piłkarze z rocznika 2009 rozegrali 3 kolejkę ligową.
+    Mecz odbył się w Jaktorowie, a naszym przeciwnikiem była drużyna Orion Cegłów.
+    W kategorii Młodziki na boisku w jednej drużynie może przebywać 9 zawodników i tak też było w pierwszej połowie meczu.</p>
+    <p>Na drugą połowę nasi piłkarze wyszyli o trzech zawodników mniej, tak się stało za decyzją naszego trenera Łukasza, ponieważ do przerwy Tur w tym spotkaniu mocno przeważał i zdobył sporo goli.</p>
+    <p>Trzy punkty lądują na naszym koncie ⚽💪</p>
+    `,
+  },
+  {
     date: "13.09.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/3054639814648175",

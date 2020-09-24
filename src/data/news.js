@@ -1,5 +1,54 @@
 const news = [
   {
+    date: "24.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3087000071412149",
+    content: `
+    <p>W dniu dzisiejszym nasi seniorzy w ramach treningu rozegrali mecz sparingowy w Woli Pękoszewskiej.</p>
+    <p>Bramki dla naszej drużyny strzelali:</p>
+    <p>2 x Dawid Sadowski</p>
+    <p>2 x Jakub Malec</p>
+    <p>1 x Michał Miodek</p>
+    <p>Muskador Wola Pekoszewska - TUR  4 : 5</p>
+    `,
+  },
+  {
+    date: "23.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3086926874752802",
+    content: `
+    <p>Kolejny mecz i kolejna wygrana Tura Jaktorów.</p>
+    <p>Chłopcy z rocznika 2007/08 rozegrali trzecią kolejkę ligi w której podejmowali na boisku w Jaktorowie Guzovia Guzów. Spotkanie dla młodych chłopców z Jaktorowa mogło się zacząć bardzo źle, ponieważ drużyna Ģuzovi miała 3 bardzo dobre okazje do strzelenia bramki. Tur przy dobrej grze drużyny gości zaczął dochodzić do sytuacji i do przerwy prowadził 2-0. Po  przerwie nasz zespół przejął inicjatywę i strzeli jeszcze 4 bramki. Mecz Zakończył się naszym zwycięstwem.  Wielkie gratulacje dla zawodników obu ekip za grę do końca tego spotkania.</p>
+    <p>Tur Jaktorów - Guzovia Guzów 6-0</p>
+    `,
+  },
+  {
+    date: "22.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3082733398505483",
+    content: `
+    <p>⚽💥🔥 AKADEMIA MALUCHA 🔥💥⚽</p>
+    <p>⏳🕰️ CZAS START 🕰️⏳</p>
+    <p>Rocznik 2016, 2015, 2014, 2013</p>
+    <p>⚽Spotkanie ORGANIZACYJNE z trenerami odbędzie się 5 października o godz 18.30</p>
+    <p>⚽Pierwszy trening zaplanowany jest w środę 7 pazdziernika, godzina treningu zostanie podana w najbliższym czasie 😀</p>
+    <p>Więcej szczegółów można uzyskać bezpośrednio u trenerów.</p>
+    <p>Łukasz Szeliga ☎️ 534-712-016</p>
+    <p>Bartlomiej Warda ☎️ 791-808-828</p>
+    <p>🤝 SERDECZNIE ZAPRASZAMY  🤝</p>
+    `,
+  },
+  {
+    date: "22.09.2020",
+    emoji: "⚽",
+    link: "https://www.facebook.com/lksturjaktorow/posts/3081890765256413",
+    content: `
+    <p>Prosimy o zapoznanie się z harmonogramem treningów ⚽🔥⚽</p>
+    <p>🔵 UWAGA 🔵</p>
+    <p>Informujemy również, że nasz Klub prowadzi otwarty nabór nowych piłkarzy/piłkarek do wszystkich wymienionych roczników.</p>
+    `,
+  },
+  {
     date: "21.09.2020",
     emoji: "⚽",
     link: "https://www.facebook.com/lksturjaktorow/posts/3078081275637362",
